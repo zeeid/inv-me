@@ -37,7 +37,7 @@ class Undangan extends BaseController
         $get_tgl            = json_decode($this->UndanganModel->tgl_indo($get_data['tgl_akad']),true);
         $get_tgl_resepsi    = json_decode($this->UndanganModel->tgl_indo($get_data['tgl_resepsi']),true);
 
-        // dd($get_tgl['bulan']);
+        $get_desain         = $this->UndanganModel->get_desain($get_data['kode_pasangan']);
         
         $data = [
             'tittle'            => 'Undangan | '.$user,
@@ -96,6 +96,8 @@ class Undangan extends BaseController
             'nama_rek_2'        => $get_data['nama_rek_2'],
             
             'pesan_cerita'      => $get_data['pesan_cerita'],
+
+            'desain'            => $get_desain,
         ];
 
         return view('layout/undangan_ola_template',$data);

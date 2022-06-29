@@ -62,13 +62,13 @@
 </head>
 
 <body>
-
+    
     <div id="box" class="box">
         <div style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)"></div>
         <div class="cover">
-            <img src="<?=base_url()?>/images/librari/penerima_frame3.png" style="width: 190px;margin-left: -95px;margin-top: -120px;">
+            <img src="<?=base_url()?>/desain/<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
             <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
-                <table style="width: 100%;color: #fff;">
+                <table style="width: 100%;color: #fff;" id="yang_depan">
                     <tr>
                         <td style="width: 100px;text-align: right"><?= $alias_pp ?></td>
                         <td style="width: 1px;text-align: center">|</td>
@@ -111,9 +111,9 @@
                             style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)">
                         </div>
                         <div class="cover">
-                            <img src="<?=base_url()?>/images/librari/penerima_frame3.png" style="width: 190px;margin-left: -95px;margin-top: -120px;">
+                            <img src="<?=base_url()?>/desain/<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
                             <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
-                                <table style="width: 100%;color: #fff;">
+                                <table style="width: 100%;color: #fff;" id="yang_dalam">
                                     <tr>
                                         <td style="width: 100px;text-align: right"><?= $alias_pp ?></td>
                                         <td style="width: 1px;text-align: center">|</td>
@@ -121,7 +121,7 @@
                                     </tr>
                                 </table>
 
-                                <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:-2px;color: #fff">
+                                <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:35px;color: #fff">
                                     <?= $tanggal_acara ?>
                                 </div>
                             </div>
@@ -138,11 +138,11 @@
                         </div>
                     </div>
 
-                    <div class="rsContent slide1" style="background-image:url(<?=base_url()?>/images/cover/3152-2959_cov.jpg);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <div class="rsContent slide1" style="background-image:url(<?=base_url()?>/desain/<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
                         <div class="cover">
                             <div class="cover_nama" style="width: 300px;color: #fff;margin-left: -150px;margin-top: -200px;text-align:center">
                                 <div style="margin-bottom:17px" class="rsABlock txtCent" data-move-offset="50" data-delay="100" data-speed="800" data-move-effect="bottom">
-                                    <img src="<?=base_url()?>/images/tema/harrydiana/rumah.png" style="width: 240px;">
+                                    <img src="<?=base_url()?>/desain/<?=$desain['logo_depan']?>" style="width: 240px;">
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                                             <?= $tanggal ?>
                                                         </b>
                                                     </div>
-                                                    <div style="margin:-9px 0px -10px 0px;">
+                                                    <div style="margin:-9px 0px -10px 0px;margin-top: 0px;">
                                                         <?= $tahun ?>
                                                     </div>
                                                 </td>
@@ -209,10 +209,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -230,7 +230,7 @@
                                     <tr>
                                         <td style="vertical-align:top">
                                             <div style="position: fixed;right: 5px;">
-                                                <img src="<?=base_url()?>/images/mempelai/2819-2959_l.jpg"
+                                                <img src="<?=base_url()?>/desain/<?=$desain['pengantin_p']?>"
                                                     style="border-radius:100px;width: 100px; height: auto; object-fit: cover;border: 4px solid #ddd;box-shadow: 0 1px 2px 0 rgba(181, 158, 122, 0.5), 0 1px 8px 0 rgba(181, 158, 122, 0.9);"
                                                     class="rsABlock" data-move-offset="30" data-delay="200"
                                                     data-speed="2500" data-move-effect="none" />
@@ -239,7 +239,7 @@
                                         </td>
                                         <td style="vertical-align:top">
                                             <div style="position: fixed;left: 5px">
-                                                <img src="<?=base_url()?>/images/mempelai/2819-2959_p.jpg"
+                                                <img src="<?=base_url()?>/desain/<?=$desain['pengantin_w']?>"
                                                     style="border-radius:100px;width: 100px; height: auto; object-fit: cover;border: 4px solid #ddd;box-shadow: 0 1px 2px 0 rgba(181, 158, 122, 0.5), 0 1px 8px 0 rgba(181, 158, 122, 0.9);"
                                                     class="rsABlock" data-move-offset="30" data-delay="200"
                                                     data-speed="2500" data-move-effect="none" />
@@ -249,7 +249,7 @@
                                     <tr>
                                         <td style="text-align: center;vertical-align: top" colspan="2">
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
-                                                data-speed="800" data-move-effect="bottom">
+                                                data-speed="800" data-move-effect="bottom" style="margin-top: 20px;">
                                                 <span class="font_nama_mempelai"><?= $nama_lengkap_pp ?></span><br>
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putra dari</div>
@@ -299,10 +299,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -354,7 +354,7 @@
 
                                                 <td style="width: 50px;text-align: center;vertical-align: middle">
                                                     <div class="rsABlock" data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top" style="border-radius: 58px;width:58px;height:58px;border: 3px solid #fff; font-size: 36px;color: #fff;background-color: #333;box-shadow: 0 1px 2px 0 rgba(150, 150, 150, 0.5), 0 1px 8px 0 rgba(150, 150, 150, 0.7)">
-                                                        <div style="margin-top:13px;margin-left:-1px">
+                                                        <div style="margin-top:20px;margin-left:-1px">
                                                             <b>
                                                                 <?= $tgl_akad ?>
                                                             </b>
@@ -423,7 +423,7 @@
                                                     <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                         data-speed="800" data-move-effect="top"
                                                         style="border-radius: 58px;width:58px;height:58px;border: 3px solid #fff; font-size: 36px;color: #fff;background-color: #333;box-shadow: 0 1px 2px 0 rgba(150, 150, 150, 0.5), 0 1px 8px 0 rgba(150, 150, 150, 0.7)">
-                                                        <div style="margin-top:13px;margin-left:-1px">
+                                                        <div style="margin-top:20px;margin-left:-1px">
                                                             <b>
                                                                 <?= $tgl_resepsi ?>
                                                             </b>
@@ -527,10 +527,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -742,10 +742,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -791,10 +791,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -864,10 +864,10 @@
                     </div>
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/top_r.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/images/tema/ninacharis/bottom_l.png"
+                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"

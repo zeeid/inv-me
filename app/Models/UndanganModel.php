@@ -140,4 +140,21 @@ class UndanganModel extends Model
 
         return json_encode($data);
     }
+
+    public function get_desain($kode_pasangan =''){
+        $data = [
+            'cover_depan' => '2819-2959_pen.jpg', 
+            'hiasan_depan'=> 'penerima_frame3.png', 
+            'cover_dalam' => '3152-2959_cov.jpg', 
+            'logo_depan'  => 'rumah.png', 
+            
+            'hiasan_atas' => 'top_r.png', 
+            'hiasan_bawah'=> 'bottom_l.png', 
+            
+            'pengantin_p' => '2819-2959_l.jpg', 
+            'pengantin_w' => '2819-2959_p.jpg', 
+        ];
+
+        return $data;
+    }
 }
