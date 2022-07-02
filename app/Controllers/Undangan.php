@@ -38,6 +38,24 @@ class Undangan extends BaseController
         $get_tgl_resepsi    = json_decode($this->UndanganModel->tgl_indo($get_data['tgl_resepsi']),true);
 
         $get_desain         = $this->UndanganModel->get_desain($get_data['kode_pasangan']);
+
+
+        // =============== GET GALERI ======================
+            $get_galeri = $this->db->table('undangan_galeri')
+            ->select('gambarnya')
+            ->where('kode_pasangan', $get_data['kode_pasangan'])
+            ->get()
+            ->getResultArray()
+            ;
+            $url_galeri    = 'https://svendor.zeeid.net/galeri/';
+
+            // dd($get_galeri);
+            // foreach ($get_galeri as $datax ) {
+            //     echo $datax['gambarnya']."<BR>";
+            // }
+
+            // die();
+        // =============== END GET GALERI ==================
         
         $data = [
             'tittle'            => 'Undangan | '.$user,
@@ -98,6 +116,8 @@ class Undangan extends BaseController
             'pesan_cerita'      => $get_data['pesan_cerita'],
 
             'desain'            => $get_desain,
+            'get_galeri'        => $get_galeri,
+            'url_galeri'        => $url_galeri,
         ];
 
         return view('layout/undangan_ola_template',$data);

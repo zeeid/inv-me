@@ -533,7 +533,7 @@ input[type="submit"]:hover {
 
     display: block;
 
-    background-image: url(<?=base_url()?>/desain/<?=$desain['cover_depan']?>);
+    background-image: url(<?=$desain['cover_depan']?>);
 
     height: 100%;
 

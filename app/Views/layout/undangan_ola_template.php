@@ -66,7 +66,7 @@
     <div id="box" class="box">
         <div style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)"></div>
         <div class="cover">
-            <img src="<?=base_url()?>/desain/<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
+            <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
             <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
                 <table style="width: 100%;color: #fff;" id="yang_depan">
                     <tr>
@@ -111,7 +111,7 @@
                             style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)">
                         </div>
                         <div class="cover">
-                            <img src="<?=base_url()?>/desain/<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
+                            <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
                             <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
                                 <table style="width: 100%;color: #fff;" id="yang_dalam">
                                     <tr>
@@ -138,11 +138,11 @@
                         </div>
                     </div>
 
-                    <div class="rsContent slide1" style="background-image:url(<?=base_url()?>/desain/<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <div class="rsContent slide1" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
                         <div class="cover">
                             <div class="cover_nama" style="width: 300px;color: #fff;margin-left: -150px;margin-top: -200px;text-align:center">
                                 <div style="margin-bottom:17px" class="rsABlock txtCent" data-move-offset="50" data-delay="100" data-speed="800" data-move-effect="bottom">
-                                    <img src="<?=base_url()?>/desain/<?=$desain['logo_depan']?>" style="width: 240px;">
+                                    <img src="<?=$desain['logo_depan']?>" style="width: 240px;">
                                 </div>
                             </div>
                         </div>
@@ -209,10 +209,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -230,7 +230,7 @@
                                     <tr>
                                         <td style="vertical-align:top">
                                             <div style="position: fixed;right: 5px;">
-                                                <img src="<?=base_url()?>/desain/<?=$desain['pengantin_p']?>"
+                                                <img src="<?=$desain['pengantin_p']?>"
                                                     style="border-radius:100px;width: 100px; height: auto; object-fit: cover;border: 4px solid #ddd;box-shadow: 0 1px 2px 0 rgba(181, 158, 122, 0.5), 0 1px 8px 0 rgba(181, 158, 122, 0.9);"
                                                     class="rsABlock" data-move-offset="30" data-delay="200"
                                                     data-speed="2500" data-move-effect="none" />
@@ -239,7 +239,7 @@
                                         </td>
                                         <td style="vertical-align:top">
                                             <div style="position: fixed;left: 5px">
-                                                <img src="<?=base_url()?>/desain/<?=$desain['pengantin_w']?>"
+                                                <img src="<?=$desain['pengantin_w']?>"
                                                     style="border-radius:100px;width: 100px; height: auto; object-fit: cover;border: 4px solid #ddd;box-shadow: 0 1px 2px 0 rgba(181, 158, 122, 0.5), 0 1px 8px 0 rgba(181, 158, 122, 0.9);"
                                                     class="rsABlock" data-move-offset="30" data-delay="200"
                                                     data-speed="2500" data-move-effect="none" />
@@ -299,10 +299,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -527,10 +527,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -583,147 +583,41 @@
                                 <!-- FOTO ATAS -->
                                 <div class="swiper-container2 gallery-top2">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_1.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_2.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_3.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_4.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_5.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_6.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_7.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_8.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_9.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_10.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_11.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_12.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_13.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_16.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide2">
-                                            <div class="cover_galeri">
-                                                <img src="<?=base_url()?>/images/galeri/5004-2959_17.jpg"
-                                                    style="width: 100%;z-index: 1333;position: relative;">
-                                            </div>
-                                        </div>
+                                        <?php 
+                                            foreach ($get_galeri as $data_galeri) {
+                                                $gambarnya = $data_galeri['gambarnya'];
+                                                ?>
+
+                                                    <div class="swiper-slide2">
+                                                        <div class="cover_galeri">
+                                                            <img src="<?=$url_galeri.'/'.$gambarnya?>"
+                                                                style="width: 100%;z-index: 1333;position: relative;">
+                                                        </div>
+                                                    </div>
+
+                                                <?php
+                                            }
+                                        ?>
+                                        
                                     </div>
                                 </div>
 
                                 <!-- FOTO BAWAH -->
                                 <div class="swiper-container2 gallery-thumbs2">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_1.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_2.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_3.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_4.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_5.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_6.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_7.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_8.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_9.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_10.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_11.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_12.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_13.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_16.jpg);border-radius: 3px;">
-                                        </div>
-                                        <div class="swiper-slide2"
-                                            style="background-image:url(<?=base_url()?>/images/galeri/5004-2959_17.jpg);border-radius: 3px;">
-                                        </div>
+                                        <?php 
+                                            foreach ($get_galeri as $data_galeri) {
+                                                $gambarnya = $data_galeri['gambarnya'];
+                                                ?>
+
+                                                    <div class="swiper-slide2"
+                                                        style="background-image:url(<?=$url_galeri.'/'.$gambarnya?>);border-radius: 3px;">
+                                                    </div>
+
+                                                <?php
+                                            }
+                                        ?>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -742,10 +636,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -791,10 +685,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -864,10 +758,10 @@
                     </div>
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?=base_url()?>/desain/<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"

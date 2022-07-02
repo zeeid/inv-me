@@ -16,34 +16,35 @@ class UndanganModel extends Model
     protected $useSoftDeletes = false;
 
     protected $allowedFields = ['kode_pasangan',
-    'slug',
-    'nama_lengkap_pp',
-    'nama_lengkap_pw',
-    'nama_ayah_pp',
-    'nama_ibu_pp',
-    'nama_ayah_pw',
-    'nama_ibu_pw',
-    'kata_pembukaan',
-    'tgl_akad',
-    'tempat_akad',
-    'alamat_akad',
-    'waktu_akad',
-    'tgl_resepsi',
-    'waktu_resepsi',
-    'tempat_resepsi',
-    'alamat_resepsi',
-    'nama_map',
-    'alamat_map',
-    
-    'link_map',
-    'ucapan_kado',
-    'no_rek_1',
-    'type_rekening_1',
-    'nama_rek_1',
-    'no_rek_2',
-    'type_rekening_2',
-    'nama_rek_2',
-    'pesan_cerita'];
+        'slug',
+        'nama_lengkap_pp',
+        'nama_lengkap_pw',
+        'nama_ayah_pp',
+        'nama_ibu_pp',
+        'nama_ayah_pw',
+        'nama_ibu_pw',
+        'kata_pembukaan',
+        'tgl_akad',
+        'tempat_akad',
+        'alamat_akad',
+        'waktu_akad',
+        'tgl_resepsi',
+        'waktu_resepsi',
+        'tempat_resepsi',
+        'alamat_resepsi',
+        'nama_map',
+        'alamat_map',
+        
+        'link_map',
+        'ucapan_kado',
+        'no_rek_1',
+        'type_rekening_1',
+        'nama_rek_1',
+        'no_rek_2',
+        'type_rekening_2',
+        'nama_rek_2',
+        'pesan_cerita'
+    ];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -142,18 +143,42 @@ class UndanganModel extends Model
     }
 
     public function get_desain($kode_pasangan =''){
+
+        $get_desain = $this->db->table('undangan_desain')
+        ->where('kode_pasangan', $kode_pasangan)
+        ->get()
+        ->getResultArray()
+        ;
+
+        // dd($get_desain[0]['cover_depan']);
+        
+        $url    = 'https://svendor.zeeid.net/desain/';
+
         $data = [
-            'cover_depan' => '2819-2959_pen.jpg', 
-            'hiasan_depan'=> 'penerima_frame3.png', 
-            'cover_dalam' => '3152-2959_cov.jpg', 
-            'logo_depan'  => 'rumah.png', 
+            'cover_depan' => $url.$get_desain[0]['cover_depan'], 
+            'hiasan_depan'=> $url.$get_desain[0]['hiasan_depan'], 
+            'cover_dalam' => $url.$get_desain[0]['cover_dalam'], 
+            'logo_depan'  => $url.$get_desain[0]['logo_depan'], 
             
-            'hiasan_atas' => 'top_r.png', 
-            'hiasan_bawah'=> 'bottom_l.png', 
+            'hiasan_atas' => $url.$get_desain[0]['hiasan_atas'], 
+            'hiasan_bawah'=> $url.$get_desain[0]['hiasan_bawah'], 
             
-            'pengantin_p' => '2819-2959_l.jpg', 
-            'pengantin_w' => '2819-2959_p.jpg', 
+            'pengantin_p' => $url.$get_desain[0]['pengantin_p'], 
+            'pengantin_w' => $url.$get_desain[0]['pengantin_w'], 
         ];
+
+        // $data = [
+        //     'cover_depan' => '2819-2959_pen.jpg', 
+        //     'hiasan_depan'=> 'penerima_frame3.png', 
+        //     'cover_dalam' => '3152-2959_cov.jpg', 
+        //     'logo_depan'  => 'rumah.png', 
+            
+        //     'hiasan_atas' => 'top_r.png', 
+        //     'hiasan_bawah'=> 'bottom_l.png', 
+            
+        //     'pengantin_p' => '2819-2959_l.jpg', 
+        //     'pengantin_w' => '2819-2959_p.jpg', 
+        // ];
 
         return $data;
     }
