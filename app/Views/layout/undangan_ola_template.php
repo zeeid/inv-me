@@ -881,7 +881,7 @@
                 </div>
             </div>
         </div>
-        <audio id="audio" src="<?=base_url()?>/song/ItsYou2.mp3" loop autoplay></audio>
+        <audio id="audio" src="<?=$desain['background_musik']?>" loop autoplay></audio>
 
         <?= $this->include('layout/undangan_script') ;?>
     </div>
