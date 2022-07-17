@@ -14,6 +14,11 @@ class Undangan extends BaseController
 
     public function index($user='',$tamu='')
     {
+        // $request = \Config\Services::request();
+        // dd($request->uri->getSegment('2'));
+
+        // dd($this->segmennya->uri->getSegment('2'));
+
         $get_data = $this->UndanganModel->get_undangan($user);
 
         if ($get_data == null) {

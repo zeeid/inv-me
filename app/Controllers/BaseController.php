@@ -58,6 +58,9 @@ class BaseController extends Controller
 
         // Cara konek DB tanpa model
         $this->db = \Config\Database::connect();
+
+        // uri
+        $this->segmennya = \Config\Services::request();
         // $komik = $db->query("SELECT * from komik")->getResultArray();
     }
 }

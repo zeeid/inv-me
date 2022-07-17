@@ -834,8 +834,7 @@
                             <tr>
                                 <td style="text-align: left;padding-top: 0px">
                                     <div><b>Nama</b></div>
-                                    <input type="text" id="nama" placeholder="Ketik nama anda"
-                                        value="Karina Ayuk Azizah" required="required">
+                                    <input type="text" id="nama" placeholder="Ketik nama anda" value="<?= $this->uri->segment('2'); ?>" required="required">
                                 </td>
                             </tr>
                             <tr>
