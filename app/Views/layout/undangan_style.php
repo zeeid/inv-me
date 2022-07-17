@@ -1,4 +1,12 @@
 <style>
+
+/* SETTING FONT EKSTERNAL */
+@font-face {
+    font-family: "Aulyars Italic";
+    src: url('https://cdn.jsdelivr.net/gh/zeeid/inv-me/public/font/Aulyars%20Italic.otf');
+    }
+/* SETTING FONT EKSTERNAL */
+
 #slider-with-blocks-1 {
     width: 100%;
 }
@@ -934,8 +942,8 @@ body {
 
 .font_lebel_mempelai {
     font-size: 14px;
-
-    font-family: "Redressed", cursive;
+    /* font-family: "Redressed", cursive; */
+    font-family: "Aulyars Italic";
 }
 
 .font_ortu {

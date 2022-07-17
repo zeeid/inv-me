@@ -259,9 +259,9 @@
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putra dari</div>
                                                 <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
-                                                    Bapak <?= $nama_ayah_pp ?>
+                                                    Bapak <?= ucwords(strtolower($nama_ayah_pp)) ?>
                                                     <br>
-                                                    Ibu <?= $nama_ibu_pp ?>
+                                                    Ibu <?= ucwords(strtolower($nama_ibu_pp)) ?>
                                                 </span>
                                             </div>
                                         </td>
@@ -281,9 +281,9 @@
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putri dari</div>
                                                 <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
-                                                    Bapak <?= $nama_ayah_pw ?>
+                                                    Bapak <?= ucwords(strtolower($nama_ayah_pw)) ?>
                                                     <br>
-                                                    Ibu <?= $nama_ibu_pw ?>
+                                                    Ibu <?= ucwords(strtolower($nama_ibu_pw)) ?>
                                                 </span>
                                             </div>
                                         </td>
@@ -543,7 +543,7 @@
                         </div>
 
                         <div class="cover">
-                            <div style="margin-left:-175px;width: 350px;margin-top: -230px;text-align:center">
+                            <div style="margin-left:-175px;width: 350px;margin-top: -265px;text-align:center">
                                 <div style="width: 350px;">
                                     <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
@@ -558,7 +558,7 @@
                                             <br><?= $alamat_map ?>
                                         </div>
                                         <!-- <div id="gmap_markers" class="gllpMap"></div> -->                                        
-                                        <div><iframe style="border:0;width: 325px;height: 335px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d719.640588130605!2d110.81976017496466!3d-7.573838087479754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a167b5486a9fd%3A0xb1795a1bd6dc6ad1!2sMasjid%20Raya%20Fatimah!5e0!3m2!1sid!2sid!4v1656270168236!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                                        <div><iframe style="border:0;width: 325px;height: 300px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d719.640588130605!2d110.81976017496466!3d-7.573838087479754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a167b5486a9fd%3A0xb1795a1bd6dc6ad1!2sMasjid%20Raya%20Fatimah!5e0!3m2!1sid!2sid!4v1656270168236!5m2!1sid!2sid" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                                         <div style="text-align: center;margin-top:10px;z-index:1000">
                                             <a href='<?=$link_map?>' target="_blank">
                                                 <button type="button" class="button" style="width:270px">
