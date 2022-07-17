@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Undangan Website Pernikahan">
     <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= $user ?>" />
-    <!-- <meta property="og:url" content="https://simanten.com" />
-    <meta property="og:image" content="https://inv.simanten.com/images/thumbnail/5004-2959.jpg"> -->
-    <meta property="og:description" content="14  Agustus  2021 ">
+    
+    <link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">
+
+    <meta property="og:description" content="<?= $tanggal." - ".$bulan." - ".$tahun ?>">
 
     <meta property="og:image:type" content="image/jpeg" />
     <title>UNDANGAN PERNIKAHAN <?= $user ?></title>
@@ -148,7 +149,7 @@
                         </div>
                         <div class="cover" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center">
                             <div style="width: 300px;">
-                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Dancing Script', cursive;color: #a98863" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div class="cover_nama rsABlock txtCent" style='font-family: "Dancing Script", cursive;color: #a98863' data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
                                 <div style="font-size: 14px;color: #6d071a;margin-top: 100px">
@@ -250,7 +251,7 @@
                                         <td style="text-align: center;vertical-align: top" colspan="2">
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                 data-speed="800" data-move-effect="bottom" style="margin-top: 20px;">
-                                                <span class="font_nama_mempelai"><?= $nama_lengkap_pp ?></span><br>
+                                                <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pp)) ?></span><br>
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putra dari</div>
                                                 <span class="font_ortu">
@@ -272,7 +273,7 @@
                                         <td style="text-align: center;vertical-align: top" colspan="2">
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                 data-speed="800" data-move-effect="bottom">
-                                                <span class="font_nama_mempelai"><?= $nama_lengkap_pw ?></span><br>
+                                                <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pw)) ?></span><br>
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putri dari</div>
                                                 <span class="font_ortu">

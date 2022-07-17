@@ -926,11 +926,9 @@ body {
 
 .font_nama_mempelai {
     font-size: 18px;
-
-    font-family: "shell", cursive;
-
+    /* font-family: "shell", cursive; */
+    font-family: 'Kiraly', sans-serif;
     margin-bottom: 0px;
-
     color: #9b6215;
 }
 
