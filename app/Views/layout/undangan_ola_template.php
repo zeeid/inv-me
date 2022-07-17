@@ -8,11 +8,15 @@
     <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= $user ?>" />
     
     <link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/mother-tongue---personal-use" rel="stylesheet">
+    <!-- FONT NAMA ORTU -->
+    <link href="http://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+                
 
     <meta property="og:description" content="<?= $tanggal." - ".$bulan." - ".$tahun ?>">
 
     <meta property="og:image:type" content="image/jpeg" />
-    <title>UNDANGAN PERNIKAHAN <?= $user ?></title>
+    <title>UNDANGAN PERNIKAHAN <?= strtoupper($user) ?></title>
     
     <!-- slider JS files -->
     <script class="rs-file" src="<?=base_url()?>/assets/royalslider/jquery-1.8.3.min.js"></script>
@@ -149,7 +153,7 @@
                         </div>
                         <div class="cover" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center">
                             <div style="width: 300px;">
-                                <div class="cover_nama rsABlock txtCent" style='font-family: "Dancing Script", cursive;color: #a98863' data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #a98863" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
                                 <div style="font-size: 14px;color: #6d071a;margin-top: 100px">
@@ -254,7 +258,7 @@
                                                 <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pp)) ?></span><br>
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putra dari</div>
-                                                <span class="font_ortu">
+                                                <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
                                                     Bapak <?= $nama_ayah_pp ?>
                                                     <br>
                                                     Ibu <?= $nama_ibu_pp ?>
@@ -276,7 +280,7 @@
                                                 <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pw)) ?></span><br>
                                                 <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putri dari</div>
-                                                <span class="font_ortu">
+                                                <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
                                                     Bapak <?= $nama_ayah_pw ?>
                                                     <br>
                                                     Ibu <?= $nama_ibu_pw ?>
