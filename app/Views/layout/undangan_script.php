@@ -224,66 +224,8 @@ function BatalPesan() {
 		<?=$uri_nya?>/dist/js/jquery.classyqr.min.js">
 </script>
 <!-- add proses -->
+
 <script>
-$('.add_prosesxxxx').click(function() {
-    var id = $(this).attr('id');
-    var nama = $('#nama').val();
-    var ucapan = $('#ucapan').val();
-    var konfirmasi = $('#konfirmasi').val();
-    var jumlah_hadir = $('#jumlah_hadir').val();
-    //alert(id);
-    if (nama == '' && ucapan == '') {
-        alert('Nama dan Ucapan harus diisi');
-    } else if (nama == '') {
-        alert('Nama harus diisi');
-    } else if (ucapan == '') {
-        alert('Ucapan harus diisi');
-    } else {
-        $.ajax({
-            url: "tema/ucapan_form/add_proses.php",
-            type: "POST",
-            data: {
-                id: id,
-                nama: nama,
-                ucapan: ucapan,
-                konfirmasi: konfirmasi,
-                jumlah_hadir: jumlah_hadir
-            },
-            success: function(data, status, xhr) {
-                document.getElementById('pesan').style.display = 'none';
-                $(".royalSlider").royalSlider('goTo', 8);
-                document.getElementById('btn_ucapan').style.display = 'none';
-            },
-            complete: function() {
-                $('#berhsil').show();
-                window.setTimeout(function() {
-                    window.location.href = "https://www.instagram.com/zeeidev/";
-                }, 300000);
-            }
-        });
-    }
-}); // update close
-</script>
-<script>
-(() => {
-    "use strict";
-    const hackSetter = (value) => () => {
-        window.name = value;
-        history.go(0)
-    };
-    // Store old reference
-    const appendChild = Element.prototype.appendChild;
-    // All services to catch
-    const urlCatchers = ["/AuthenticationService.Authenticate?", "/QuotaService.RecordEvent?"];
-    Element.prototype.appendChild = function(element) {
-        const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
-        const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
-        if (!isGMapAccessScript) {
-            return appendChild.call(this, element);
-        }
-        return element;
-    };
-})();
 $(document).ready(function() {
     $("#konfirmasi").change(function() {
         var konfirmasi = $(this).val();
@@ -301,6 +243,7 @@ $(document).ready(function() {
     });
 });
 </script>
+
 <script>
 var vid = document.getElementById("myVideo");
 vid.onplay = function() {
@@ -330,4 +273,3 @@ function delete_flash(flash) {
     $('#tercopy').hide()
 }
 </script>
-<!-- <script type="text/javascript" src="https://cdn.addevent.com/legacy2000/libs/atc/1.6.1/atc.min.js" async defer></script> -->
