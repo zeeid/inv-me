@@ -44,6 +44,8 @@ class Undangan extends BaseController
 
         $get_desain         = $this->UndanganModel->get_desain($get_data['kode_pasangan']);
 
+        $get_tamu           = $this->UndanganModel->get_tamu($tamu);
+
 
         // =============== GET GALERI ======================
             $get_galeri = $this->db->table('undangan_galeri')
@@ -72,6 +74,8 @@ class Undangan extends BaseController
             'nama_pp'           => $nama_pp[0],
             'nama_lengkap_pw'   => $nama_lengkap_pw,
             'nama_lengkap_pp'   => $nama_lengkap_pp,
+
+            'kode_pasangan'     => $get_data['kode_pasangan'],
 
             'nama_ayah_pp'      => $get_data['nama_ayah_pp'],
             'nama_ibu_pp'       => $get_data['nama_ibu_pp'],
@@ -123,6 +127,8 @@ class Undangan extends BaseController
             'desain'            => $get_desain,
             'get_galeri'        => $get_galeri,
             'url_galeri'        => $url_galeri,
+
+            'get_tamu'          => $get_tamu,
         ];
 
         return view('layout/undangan_ola_template',$data);

@@ -183,4 +183,25 @@ class UndanganModel extends Model
 
         return $data;
     }
+    
+    public function get_tamu($nama_tamu =''){
+
+        $get_tamu = $this->db->table('undangan_tamu')
+        ->where('nama_tamu', $nama_tamu)
+        ->get()
+        ->getResultArray()
+        ;
+
+        $data = [
+            'id_tamu'     => $get_tamu[0]['id'], 
+            'nama_tamu'   => $get_tamu[0]['nama_tamu'], 
+            'alamat_tamu' => $get_tamu[0]['alamat_tamu'], 
+            'no_wa'       => $get_tamu[0]['no_wa'], 
+            'ucapan'      => $get_tamu[0]['ucapan'], 
+        ];
+
+        // dd($data);
+
+        return $data;
+    }
 }

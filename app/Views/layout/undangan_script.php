@@ -1,3 +1,26 @@
+
+<script>
+    $("#form_ucapan").submit(function (e) { 
+        e.preventDefault();
+        var data = $("#form_ucapan").serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "api/kirim_ucapan",
+            data: data,
+            beforeSend: function() {
+                // setting a timeout
+                $("#loading_ucapan").html('<i class="fa fa-spinner fa-spin"></i> Mohon Tunggu, Sedang Mengirim Ucapan ^_^');
+            },
+            success: function (response) {
+                document.getElementById('pesan').style.display = 'none';
+                $(".royalSlider").royalSlider('goTo', 8);
+                document.getElementById('btn_ucapan').style.display = 'none';
+            }
+        });
+    });
+</script>
+
 <!-- <script src="https://maps.google.com/maps/api/js?v=3&amp;key=AIzaSyA9xhPOyv-3hgXoR0EBvHrtWSp4mbCk1Tw&amp;sensor=false"></script>
 <script src="<?=base_url()?>/dist/js/gmaps.js"></script> -->
 <script>
@@ -225,7 +248,7 @@ function BatalPesan() {
 </script>
 <!-- add proses -->
 <script>
-$('.add_proses').click(function() {
+$('.add_prosesxxxx').click(function() {
     var id = $(this).attr('id');
     var nama = $('#nama').val();
     var ucapan = $('#ucapan').val();

@@ -88,7 +88,7 @@
                 <p style="color:#fff;font-size: 12px;">Yth.</p>
                 <p style="color:#e3c251;font-size: 17px;margin-bottom: 10px"><?= $nama_tamu ?></p>
                 <img src="<?=base_url()?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-5px;margin-bottom:5px;">
-                <div style="color: #fff">( <?= $alamat_tamu ?> )</div>
+                <div style="color: #fff">( <?= $get_tamu['alamat_tamu'] ?> )</div>
             </div>
             <!--<div class="blink blink-one">-->
             <div>
@@ -134,7 +134,7 @@
                                 <p style="color:#fff;font-size: 12px;">Yth.</p>
                                 <p style="color:#e3c251;font-size: 17px;margin-bottom: 10px;margin-top: 14px"><?= $nama_tamu ?></p>
                                 <img src="<?=base_url()?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-2px;margin-bottom:8px;">
-                                <div style="color: #fff;font-size: 14px">( <?= $alamat_tamu ?> )</div>
+                                <div style="color: #fff;font-size: 14px">( <?= $get_tamu['alamat_tamu'] ?> )</div>
                             </div>
                             <div class="rsTmb" data-rsw="632" data-rsh="500"><i class="fa fa-user"
                                     style="margin-top: 10px;font-size: 17px"></i>
@@ -823,65 +823,71 @@
             style="position: absolute;bottom: 0px;top: 0px;left: 0px;right: 0px;background-color: #ccbfb9;display: none;z-index: 1333">
             <div style="padding: 0px;position: relative;background-color: #ccbfb9;">
                 <div style="padding: 20px;position: relative;">
-                    <div style="border-radius: 15px;background-color: #dadfe5;padding: 0px 15px 10px 15px;border: 5px solid #fff;box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);   ">
-                        <div style="text-align: center;color: #39404a;margin-bottom: 10px;margin-top:20px">
-                            <h4><img src="<?=base_url()?>/images/librari/pen_grey.png" style="height: 35px;margin-bottom: 0px;">
-                                <div>UCAPAN & KEHADIRAN</div>
-                            </h4>
+                    <form id="form_ucapan">
+                        <div style="border-radius: 15px;background-color: #dadfe5;padding: 0px 15px 10px 15px;border: 5px solid #fff;box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);   ">
+                            <div style="text-align: center;color: #39404a;margin-bottom: 10px;margin-top:20px">
+                                <h4><img src="<?=base_url()?>/images/librari/pen_grey.png" style="height: 35px;margin-bottom: 0px;">
+                                    <div>UCAPAN & KEHADIRAN</div>
+                                </h4>
+                            </div>
+                            <hr>
+                            <table style="width: 100%;color: #39404a">
+                                <tr>
+                                    <td style="text-align: left;padding-top: 0px">
+                                        <div><b>Nama </b></div>
+                                        <input type="hidden" name="kode_pasangan" value="<?=$kode_pasangan?>">
+                                        <input type="hidden" name="id_tamu" value="<?=$get_tamu['id_tamu']?>">
+                                        <input required type="text" id="nama" placeholder="Ketik nama anda" value="<?= ucwords($nama_tamu); ?>" required="required">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;padding-top: 10px">
+                                        <div><b>Isi Ucapan</b></div>
+                                        <label class="input">
+                                            <textarea required rows="5" style="width:100%;border:1px solid #cdcdcd" id="ucapan"
+                                                name="ucapan" class="form-control no-resize"
+                                                placeholder="Ketik ucapan dan doa"></textarea>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;padding-top: 10px">
+                                        <div><b>Konfirmasi Kehadiran</b></div>
+                                        <select id="konfirmasi" name='kehadiran' class="kehadiran form-control"
+                                            style="background-color: #fff">
+                                            <option value="1" selected="selected">Ya</option>
+                                            <option value="0">Tidak</option>
+                                            <option value="2">Belum Tahu</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;padding-top: 10px">
+                                        <input type="hidden" id="jumlah_hadir" name="jumlah_hadir">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="loading_ucapan" style="padding:0px 5px;">
+                                
+                            </div>
+                            <hr style="margin: 15px 0px">
+                            <div style="text-align: right">
+                                <button onclick="BatalPesan()" type="button" class="button pull-left "
+                                    style="color:#555;font-family: 'glacial', sans-serif;width:60px;height:45px;background-color:#dadfe5;border:0px solid #fff">
+                                    <span>
+                                        <b>Batal</b>
+                                    </span>
+                                </button>&nbsp;&nbsp;
+                                <button type="submit" class="button add_proses" name="add_proses" id='2959'
+                                    style="color:#333;background-color: #5e656f;padding: 9px 10px;height:45px;width: 120px">
+                                    <span>
+                                        <b>Kirim Ucapan</b>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                        <hr>
-                        <table style="width: 100%;color: #39404a">
-                            <tr>
-                                <td style="text-align: left;padding-top: 0px">
-                                    <div><b>Nama</b></div>
-                                    <input type="text" id="nama" placeholder="Ketik nama anda" value="<?= $this->uri->segment('2'); ?>" required="required">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;padding-top: 10px">
-                                    <div><b>Isi Ucapan</b></div>
-                                    <label class="input">
-                                        <textarea rows="5" style="width:100%;border:1px solid #cdcdcd" id="ucapan"
-                                            name="ucapan" class="form-control no-resize"
-                                            placeholder="Ketik ucapan dan doa"></textarea>
-                                    </label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;padding-top: 10px">
-                                    <div><b>Konfirmasi Kehadiran</b></div>
-                                    <select id="konfirmasi" name='kehadiran' class="kehadiran form-control"
-                                        style="background-color: #fff">
-                                        <option selected="selected">Ya</option>
-                                        <option>Tidak</option>
-                                        <option>Belum Tahu</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;padding-top: 10px">
-                                    <input type="hidden" id="jumlah_hadir" name="jumlah_hadir">
-                                </td>
-                            </tr>
-                        </table>
-                        <div style="padding:0px 5px;">
-                        </div>
-                        <hr style="margin: 15px 0px">
-                        <div style="text-align: right">
-                            <button onclick="BatalPesan()" type="button" class="pull-left "
-                                style="color:#555;font-family: 'glacial', sans-serif;width:60px;height:45;background-color:#dadfe5;border:0px solid #fff">
-                                <span>
-                                    <b>Batal</b>
-                                </span>
-                            </button>&nbsp;&nbsp;
-                            <button type="button" class="button add_proses" name="add_proses" id='2959'
-                                style="color:#333;background-color: #5e656f;padding: 9px 10px;height:45px;width: 120px">
-                                <span>
-                                    <b>Kirim Ucapan</b>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>
