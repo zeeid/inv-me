@@ -91,7 +91,7 @@
                 <div style="color: #fff">( <?= $get_tamu['alamat_tamu'] ?> )</div>
             </div>
             <!--<div class="blink blink-one">-->
-            <div>
+            <div style="margin-top: -15px;">
                 <div
                     style="box-shadow:inset 0 0 10px rgba(0,0,0,0.5);background-color: #fff;border-radius: 50px;padding: 8px 0px;border: 1px solid #fff;color: #000;width: 140px;margin-left: -70px;text-align: center;margin-top: 40px;font-size: 17px">
                     <small><b>Buka Undangan</b></small></div>
@@ -153,10 +153,10 @@
                         </div> -->
                         <div class="cover_dua" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center;">
                             <div style="width: 300px;">
-                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #ffa700;font-weight: bolder;font-size: 40px;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #ffa700;font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
-                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 100%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
+                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 85%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
                                     <div style="text-align: center;color:#ffa700;padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
                                     <div style="text-align: center" class="rsABlock txtCent" data-move-offset="50" data-delay="1000" data-speed="800" data-move-effect="top">
                                         <table style="width: 100%;color:#ffa700">
