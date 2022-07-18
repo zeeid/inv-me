@@ -143,26 +143,26 @@
                         </div>
                     </div>
 
-                    <div class="rsContent slide1" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
-                        <div class="cover">
+                    <div class="rsContent slide1" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-blend-mode: color-dodge;">
+                        <!-- <div class="cover" style="display: <?php if($desain['file_logo_depan']==''){echo "none";}else{echo "block";} ?>">
                             <div class="cover_nama" style="width: 300px;color: #fff;margin-left: -150px;margin-top: -200px;text-align:center">
                                 <div style="margin-bottom:17px" class="rsABlock txtCent" data-move-offset="50" data-delay="100" data-speed="800" data-move-effect="bottom">
                                     <img src="<?=$desain['logo_depan']?>" style="width: 240px;">
                                 </div>
                             </div>
-                        </div>
-                        <div class="cover" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center">
+                        </div> -->
+                        <div class="cover_dua" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center;">
                             <div style="width: 300px;">
-                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #a98863" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #ffa700;font-weight: bolder;font-size: 40px;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
-                                <div style="font-size: 14px;color: #6d071a;margin-top: 100px">
-                                    <div style="text-align: center;color:#a98863;padding: 20px 0px 5px 0px;font-size:14px" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
+                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 100%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
+                                    <div style="text-align: center;color:#ffa700;padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
                                     <div style="text-align: center" class="rsABlock txtCent" data-move-offset="50" data-delay="1000" data-speed="800" data-move-effect="top">
-                                        <table style="width: 100%;color:#a98863">
+                                        <table style="width: 100%;color:#ffa700">
                                             <tr>
                                                 <td></td>
-                                                <td style="border-top: 1px solid #a98863;border-bottom: 1px solid #a98863;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid #ffa700;border-bottom: 1px solid #ffa700;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $hari ?>
                                                     </b>
@@ -177,7 +177,7 @@
                                                         <?= $tahun ?>
                                                     </div>
                                                 </td>
-                                                <td style="border-top: 1px solid #a98863;border-bottom: 1px solid #a98863;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid #ffa700;border-bottom: 1px solid #ffa700;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $bulan ?>
                                                     </b>
@@ -670,7 +670,7 @@
                                                 <?= $no_rek_1 ?><br>
                                                 a/n <?= $nama_rek_1 ?>
                                             </b><br><br><br>
-                                            <img src="https://lib.simanten.com/wp-content/uploads/2021/06/logo_ovo.png"
+                                            <img src=""
                                                 style="width: 80px;"><br>
                                             <b>
                                                 <?= $no_rek_2 ?><br>

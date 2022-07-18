@@ -236,6 +236,19 @@
 
     transform: translate(-50%, -50%);
 }
+.cover_dua {
+    width: 1px;
+
+    height: 1px;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 30%;
+
+    transform: translate(-50%, -50%);
+}
 
 .cover2 {
     width: 1px;

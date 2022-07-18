@@ -155,17 +155,29 @@ class UndanganModel extends Model
         $url    = 'https://svendor.zeeid.net/desain/';
 
         $data = [
-            'cover_depan' => $url.$get_desain[0]['cover_depan'], 
-            'hiasan_depan'=> $url.$get_desain[0]['hiasan_depan'], 
-            'cover_dalam' => $url.$get_desain[0]['cover_dalam'], 
-            'logo_depan'  => $url.$get_desain[0]['logo_depan'], 
+            'cover_depan'           => $url.$get_desain[0]['cover_depan'], 
+            'hiasan_depan'          => $url.$get_desain[0]['hiasan_depan'], 
+            'cover_dalam'           => $url.$get_desain[0]['cover_dalam'], 
+            'logo_depan'            => $url.$get_desain[0]['logo_depan'], 
             
-            'hiasan_atas' => $url.$get_desain[0]['hiasan_atas'], 
-            'hiasan_bawah'=> $url.$get_desain[0]['hiasan_bawah'], 
+            'hiasan_atas'           => $url.$get_desain[0]['hiasan_atas'], 
+            'hiasan_bawah'          => $url.$get_desain[0]['hiasan_bawah'], 
             
-            'pengantin_p' => $url.$get_desain[0]['pengantin_p'], 
-            'pengantin_w' => $url.$get_desain[0]['pengantin_w'], 
-            'background_musik' => $url.$get_desain[0]['background_musik'], 
+            'pengantin_p'           => $url.$get_desain[0]['pengantin_p'], 
+            'pengantin_w'           => $url.$get_desain[0]['pengantin_w'], 
+            'background_musik'      => $url.$get_desain[0]['background_musik'], 
+            
+            'file_cover_depan'      => $get_desain[0]['cover_depan'], 
+            'file_hiasan_depan'     => $get_desain[0]['hiasan_depan'], 
+            'file_cover_dalam'      => $get_desain[0]['cover_dalam'], 
+            'file_logo_depan'       => $get_desain[0]['logo_depan'], 
+            
+            'file_hiasan_atas'      => $get_desain[0]['hiasan_atas'], 
+            'file_hiasan_bawah'     => $get_desain[0]['hiasan_bawah'], 
+            
+            'file_pengantin_p'      => $get_desain[0]['pengantin_p'], 
+            'file_pengantin_w'      => $get_desain[0]['pengantin_w'], 
+            'file_background_musik' => $get_desain[0]['background_musik'], 
         ];
 
         // $data = [
