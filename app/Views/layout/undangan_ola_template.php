@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="rsContent slide1" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-blend-mode: color-dodge;">
+                    <div class="rsContent slide1 bg-content" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-blend-mode: color-dodge;">
                         <!-- <div class="cover" style="display: <?php if($desain['file_logo_depan']==''){echo "none";}else{echo "block";} ?>">
                             <div class="cover_nama" style="width: 300px;color: #fff;margin-left: -150px;margin-top: -200px;text-align:center">
                                 <div style="margin-bottom:17px" class="rsABlock txtCent" data-move-offset="50" data-delay="100" data-speed="800" data-move-effect="bottom">
