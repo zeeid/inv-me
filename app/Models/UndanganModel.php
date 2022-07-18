@@ -191,17 +191,34 @@ class UndanganModel extends Model
         ->get()
         ->getResultArray()
         ;
+        
+        $jml_tamu = $this->db->table('undangan_tamu')
+        ->where('nama_tamu', $nama_tamu)
+        ->countAllResults()
+        ;
 
-        $data = [
-            'id_tamu'     => $get_tamu[0]['id'], 
-            'nama_tamu'   => $get_tamu[0]['nama_tamu'], 
-            'alamat_tamu' => $get_tamu[0]['alamat_tamu'], 
-            'no_wa'       => $get_tamu[0]['no_wa'], 
-            'ucapan'      => $get_tamu[0]['ucapan'], 
-        ];
+        // dd($jml_tamu);
+        if ($jml_tamu == 0) {
+            $data = array(
+                'status'    => 201, 
+                'pesan'     => "Tamu ".$nama_tamu." tidak ditemukan",
+            );
+            echo json_encode($data);
+            die();
+        }else{
 
-        // dd($data);
+            $data = [
+                'id_tamu'     => $get_tamu[0]['id'], 
+                'nama_tamu'   => $get_tamu[0]['nama_tamu'], 
+                'alamat_tamu' => $get_tamu[0]['alamat_tamu'], 
+                'no_wa'       => $get_tamu[0]['no_wa'], 
+                'ucapan'      => $get_tamu[0]['ucapan'], 
+            ];
+    
+            // dd($data);
+    
+            return $data;
+        }
 
-        return $data;
     }
 }

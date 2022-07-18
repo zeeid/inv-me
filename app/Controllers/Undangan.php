@@ -14,6 +14,15 @@ class Undangan extends BaseController
 
     public function index($user='',$tamu='')
     {
+
+        $local_dev = "YES";
+        if ($local_dev=='YES') {
+            $uri_nya = base_url();
+        }else{
+            // ONLINE CDN
+            $uri_nya = "https://cdn.jsdelivr.net/gh/zeeid/inv-me@master/public/";
+        }
+
         // $request = \Config\Services::request();
         // dd($request->uri->getSegment('2'));
 
@@ -65,6 +74,8 @@ class Undangan extends BaseController
         // =============== END GET GALERI ==================
         
         $data = [
+            'uri_nya'           => $uri_nya,
+
             'tittle'            => 'Undangan | '.$user,
             'user'              => $user,
             'nama_tamu'         => $tamu,

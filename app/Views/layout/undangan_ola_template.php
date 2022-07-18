@@ -19,28 +19,28 @@
     <title>UNDANGAN PERNIKAHAN <?= strtoupper($user) ?></title>
     
     <!-- slider JS files -->
-    <script class="rs-file" src="<?=base_url()?>/assets/royalslider/jquery-1.8.3.min.js"></script>
-    <script class="rs-file" src="<?=base_url()?>/assets/royalslider/jquery.royalslider.min.js"></script>
-    <link class="rs-file" href="<?=base_url()?>/assets/royalslider/royalslider.css" rel="stylesheet">
-    <script class="rs-file" src="<?=base_url()?>/assets/royalslider/jquery.easing-1.3.js"></script>
+    <script class="rs-file" src="<?=$uri_nya?>/assets/royalslider/jquery-1.8.3.min.js"></script>
+    <script class="rs-file" src="<?=$uri_nya?>/assets/royalslider/jquery.royalslider.min.js"></script>
+    <link class="rs-file" href="<?=$uri_nya?>/assets/royalslider/royalslider.css" rel="stylesheet">
+    <script class="rs-file" src="<?=$uri_nya?>/assets/royalslider/jquery.easing-1.3.js"></script>
 
     <!-- syntax highlighter -->
 
-    <script src="<?=base_url()?>/assets/preview-assets/js/highlight.pack.js"></script>
-    <script src="<?=base_url()?>/assets/preview-assets/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="<?=$uri_nya?>/assets/preview-assets/js/highlight.pack.js"></script>
+    <script src="<?=$uri_nya?>/assets/preview-assets/js/jquery-ui-1.8.22.custom.min.js"></script>
 
     <!-- preview-related stylesheets -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Redressed&amp;display=swap" rel="stylesheet">
 
-    <link href="<?=base_url()?>/assets/preview-assets/css/reset.css" rel="stylesheet">
-    <link href="<?=base_url()?>/assets/preview-assets/css/smoothness/jquery-ui-1.8.22.custom.css" rel="stylesheet">
-    <link href="<?=base_url()?>/assets/preview-assets/css/github.css" rel="stylesheet">
+    <link href="<?=$uri_nya?>/assets/preview-assets/css/reset.css" rel="stylesheet">
+    <link href="<?=$uri_nya?>/assets/preview-assets/css/smoothness/jquery-ui-1.8.22.custom.css" rel="stylesheet">
+    <link href="<?=$uri_nya?>/assets/preview-assets/css/github.css" rel="stylesheet">
 
-    <link class="rs-file" href="<?=base_url()?>/assets/royalslider/skins/minimal-white/rs-minimal-white.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?=base_url()?>/dist/css/swiper.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>/dist/css/swiper.min2.css">
+    <link class="rs-file" href="<?=$uri_nya?>/assets/royalslider/skins/minimal-white/rs-minimal-white.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?=$uri_nya?>/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="<?=$uri_nya?>/dist/css/swiper.min2.css">
 
     <link href="https://fonts.googleapis.com/css?family=Playball&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap" rel="stylesheet">
@@ -55,9 +55,9 @@
 
     <!-- guestbook -->
 
-    <link rel="stylesheet" href="<?=base_url()?>/assets/css/style.css">
-    <link rel="stylesheet" href="<?=base_url()?>/assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?=base_url()?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="<?=$uri_nya?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
     <!-- slider css -->
 
@@ -87,7 +87,7 @@
             <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 80px">
                 <p style="color:#fff;font-size: 12px;">Yth.</p>
                 <p style="color:#e3c251;font-size: 17px;margin-bottom: 10px"><?= $nama_tamu ?></p>
-                <img src="<?=base_url()?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-5px;margin-bottom:5px;">
+                <img src="<?=$uri_nya?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-5px;margin-bottom:5px;">
                 <div style="color: #fff">( <?= $get_tamu['alamat_tamu'] ?> )</div>
             </div>
             <!--<div class="blink blink-one">-->
@@ -133,7 +133,7 @@
                             <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 86px">
                                 <p style="color:#fff;font-size: 12px;">Yth.</p>
                                 <p style="color:#e3c251;font-size: 17px;margin-bottom: 10px;margin-top: 14px"><?= $nama_tamu ?></p>
-                                <img src="<?=base_url()?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-2px;margin-bottom:8px;">
+                                <img src="<?=$uri_nya?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-2px;margin-bottom:8px;">
                                 <div style="color: #fff;font-size: 14px">( <?= $get_tamu['alamat_tamu'] ?> )</div>
                             </div>
                             <div class="rsTmb" data-rsw="632" data-rsh="500"><i class="fa fa-user"
@@ -256,7 +256,7 @@
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                 data-speed="800" data-move-effect="bottom" style="margin-top: 20px;">
                                                 <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pp)) ?></span><br>
-                                                <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
+                                                <img src="<?=$uri_nya?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putra dari</div>
                                                 <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
                                                     Bapak <?= ucwords(strtolower($nama_ayah_pp)) ?>
@@ -278,7 +278,7 @@
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                 data-speed="800" data-move-effect="bottom">
                                                 <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pw)) ?></span><br>
-                                                <img src="<?=base_url()?>/images/library/line_9b6215.png" style="width: 180px;">
+                                                <img src="<?=$uri_nya?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putri dari</div>
                                                 <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
                                                     Bapak <?= ucwords(strtolower($nama_ayah_pw)) ?>
@@ -328,13 +328,13 @@
                                             data-move-effect="top">
                                             <table style="width: 100%">
                                                 <tr>
-                                                    <td><img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                                    <td><img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                                             style="height:1px;width: 100%;padding:0px 10px 5px 0px;">
                                                     </td>
                                                     <td
                                                         style="color: #9b6215;text-align: center;padding: 0px 15px;white-space: nowrap;width: 1px">
                                                         AKAD</td>
-                                                    <td><img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                                    <td><img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                                             style="height:1px;width: 100%;padding:0px 10px 5px 0px;">
                                                     </td>
                                                 </tr>
@@ -396,13 +396,13 @@
                                             data-move-effect="top">
                                             <table style="width: 100%">
                                                 <tr>
-                                                    <td><img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                                    <td><img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                                             style="height:1px;width: 100%;padding:0px 10px 5px 0px;">
                                                     </td>
                                                     <td
                                                         style="color: #9b6215;text-align: center;padding: 0px 15px;white-space: nowrap;width: 1px">
                                                         Resepsi</td>
-                                                    <td><img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                                    <td><img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                                             style="height:1px;width: 100%;padding:0px 10px 5px 0px;">
                                                     </td>
                                                 </tr>
@@ -551,7 +551,7 @@
                                     <div style="margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
 
-                                        <img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                        <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                             style="height:1px;width: 70px;padding:0px 10px 10px 10px;">
 
                                         <div style="font-size: 12px;margin-bottom: 10px"><b><?= $nama_map ?></b>
@@ -562,7 +562,7 @@
                                         <div style="text-align: center;margin-top:10px;z-index:1000">
                                             <a href='<?=$link_map?>' target="_blank">
                                                 <button type="button" class="button" style="width:270px">
-                                                    <img src="<?=base_url()?>/images/librari/gmap.png" style="width: 30px;">
+                                                    <img src="<?=$uri_nya?>/images/librari/gmap.png" style="width: 30px;">
                                                     <span style="position: relative;bottom: 8px">
                                                         <b>Buka di GMAPS</b>
                                                     </span>
@@ -659,13 +659,13 @@
                                         Kado</div>
                                     <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
-                                        <img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                        <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                             style="height:1px;width: 70px;padding:0px 10px 10px 10px;">
                                         <div
                                             style="text-align:center;margin-bottom: 10px;font-size:12px;padding:0px 20px">
                                             <?= $ucapan_kado ?>
                                             <br>
-                                            <img src="<?=base_url()?>/images/librari/mandiri.png" style="width: 80px;"><br>
+                                            <img src="<?=$uri_nya?>/images/librari/mandiri.png" style="width: 80px;"><br>
                                             <b>
                                                 <?= $no_rek_1 ?><br>
                                                 a/n <?= $nama_rek_1 ?>
@@ -707,7 +707,7 @@
                                         Pencegahan Covid-19</div>
                                     <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
-                                        <img src="<?=base_url()?>/images/library/dot_9b6215.jpg"
+                                        <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                             style="height:1px;width: 70px;padding:0px 10px 10px 10px;">
                                         <div style="margin-bottom: 10px">Acara ini akan diselenggarakan dengan
                                             mematuhi<br>protokol pencegahan penyebaran COVID-19.</div>
@@ -715,7 +715,7 @@
                                             <table style="width:100%">
                                                 <tr>
                                                     <td style="width:50px"><img
-                                                            src="<?=base_url()?>/images/librari/covid/masker_black.png"
+                                                            src="<?=$uri_nya?>/images/librari/covid/masker_black.png"
                                                             style="height:auto;width: 50px;"></td>
                                                     <td style="vertical-align:top;padding:5px 10px;text-align:left">
                                                         <br>Tamu undangan menggunakan masker.</td>
@@ -726,14 +726,14 @@
                                                     <td style="vertical-align:top;padding:5px 10px;text-align:right">
                                                         <br>Suhu tubuh normal<br>(dibawah 37,5°C)</td>
                                                     <td style="width:50px"><img
-                                                            src="<?=base_url()?>/images/librari/covid/temperatur_black.png"
+                                                            src="<?=$uri_nya?>/images/librari/covid/temperatur_black.png"
                                                             style="height:auto;width: 50px;"></td>
                                                 </tr>
                                             </table>
                                             <table style="width:100%">
                                                 <tr>
                                                     <td style="width:50px"><img
-                                                            src="<?=base_url()?>/images/librari/covid/jaga_jarak_black.png"
+                                                            src="<?=$uri_nya?>/images/librari/covid/jaga_jarak_black.png"
                                                             style="height:auto;width: 50px;"></td>
                                                     <td style="vertical-align:top;padding:5px 10px;text-align:left">
                                                         <br>Jaga jarak antar orang sekitar<br>2 meter.</td>
@@ -745,7 +745,7 @@
                                                         <br>Cuci tangan menggunakan air dan sabun atau menggunakan hand
                                                         sanitizer.</td>
                                                     <td style="width:50px"><img
-                                                            src="<?=base_url()?>/images/librari/covid/cuci_tangan_black.png"
+                                                            src="<?=$uri_nya?>/images/librari/covid/cuci_tangan_black.png"
                                                             style="height:auto;width: 50px;"></td>
                                                 </tr>
                                             </table>
@@ -791,7 +791,7 @@
                                         </div>
                                         <div style="text-align: center;margin-top: 70px" id="btn_ucapan">
                                             <button type="button" class="button" onclick="Pesan()"
-                                                style="margin-top: -42px;"><img src="<?=base_url()?>/images/librari/pen_black.png"
+                                                style="margin-top: -42px;"><img src="<?=$uri_nya?>/images/librari/pen_black.png"
                                                     style="width: 30px;">
                                                 <span style="position: relative;bottom: 8px">
                                                     <b>Tulis Ucapan & Kehadiran</b>
@@ -826,7 +826,7 @@
                     <form id="form_ucapan">
                         <div style="border-radius: 15px;background-color: #dadfe5;padding: 0px 15px 10px 15px;border: 5px solid #fff;box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);   ">
                             <div style="text-align: center;color: #39404a;margin-bottom: 10px;margin-top:20px">
-                                <h4><img src="<?=base_url()?>/images/librari/pen_grey.png" style="height: 35px;margin-bottom: 0px;">
+                                <h4><img src="<?=$uri_nya?>/images/librari/pen_grey.png" style="height: 35px;margin-bottom: 0px;">
                                     <div>UCAPAN & KEHADIRAN</div>
                                 </h4>
                             </div>

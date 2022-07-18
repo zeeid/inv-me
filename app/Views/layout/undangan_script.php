@@ -21,35 +21,12 @@
     });
 </script>
 
-<!-- <script src="https://maps.google.com/maps/api/js?v=3&amp;key=AIzaSyA9xhPOyv-3hgXoR0EBvHrtWSp4mbCk1Tw&amp;sensor=false"></script>
-<script src="<?=base_url()?>/dist/js/gmaps.js"></script> -->
-<script>
-    // $(function() {
-    //     //Markers
-    //     var markers = new GMaps({
-    //         div: '#gmap_markers',
-    //         lat: '3.6067065012238873',
-    //         lng: '98.70547222275047',
-    //         zoomControl: false,
-    //         mapTypeControl: false,
-    //         streetViewControl: false,
-    //         zoom: 15,
-    //     });
-    //     markers.addMarker({
-    //         lat: 3.6067065012238873,
-    //         lng: 98.70547222275047,
-    //         title: 'Lokasi Resepsi',
-    //         infoWindow: {
-    //             content: ' Gedung Masjid Raya Fatimah'
-    //         }
-    //     });
-    // });
+
+<script type="text/javascript" src="
+	<?=$uri_nya?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js">
 </script>
 <script type="text/javascript" src="
-	<?=base_url()?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js">
-</script>
-<script type="text/javascript" src="
-	<?=base_url()?>/assets/js/plugins/owl-carousel.js">
+	<?=$uri_nya?>/assets/js/plugins/owl-carousel.js">
 </script>
 <script type="text/javascript">
 jQuery(document).ready(function() {
@@ -130,10 +107,10 @@ jQuery(document).ready(function($) {
 });
 </script>
 <script src="
-		<?=base_url()?>/dist/js/swiper.min.js">
+		<?=$uri_nya?>/dist/js/swiper.min.js">
 </script>
 <script src="
-		<?=base_url()?>/dist/js/swiper.min2.js">
+		<?=$uri_nya?>/dist/js/swiper.min2.js">
 </script>
 <script>
 var swiper = new Swiper('.swiper-container', {
@@ -244,7 +221,7 @@ function BatalPesan() {
 }
 </script>
 <script src="
-		<?=base_url()?>/dist/js/jquery.classyqr.min.js">
+		<?=$uri_nya?>/dist/js/jquery.classyqr.min.js">
 </script>
 <!-- add proses -->
 <script>
