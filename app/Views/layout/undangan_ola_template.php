@@ -153,17 +153,17 @@
                         </div> -->
                         <div class="cover_dua" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center;">
                             <div style="width: 300px;">
-                                <div style="text-align: center;color:rgb(252, 158, 255);padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
-                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: rgb(252, 158, 255);font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div style="text-align: center;color:<?=$font_sampul?>;padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
+                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: <?=$font_sampul?>;font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
                                 <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 111%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
                                     
                                     <div style="text-align: center" class="rsABlock txtCent" data-move-offset="50" data-delay="1000" data-speed="800" data-move-effect="top">
-                                        <table style="width: 100%;color:rgb(252, 158, 255)">
+                                        <table style="width: 100%;color:<?=$font_sampul?>">
                                             <tr>
                                                 <td></td>
-                                                <td style="border-top: 1px solid rgb(252, 158, 255);border-bottom: 1px solid rgb(252, 158, 255);width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid <?=$font_sampul?>;border-bottom: 1px solid <?=$font_sampul?>;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $hari ?>
                                                     </b>
@@ -178,7 +178,7 @@
                                                         <?= $tahun ?>
                                                     </div>
                                                 </td>
-                                                <td style="border-top: 1px solid rgb(252, 158, 255);border-bottom: 1px solid rgb(252, 158, 255);width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid <?=$font_sampul?>;border-bottom: 1px solid <?=$font_sampul?>;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $bulan ?>
                                                     </b>

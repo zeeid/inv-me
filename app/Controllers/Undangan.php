@@ -81,10 +81,14 @@ class Undangan extends BaseController
                 $is_kado = "none";
             }
         // ====== KADO =====
+
+        // WARNA FONT SAMPUL
+        $font_sampul = "rgb(252, 158, 255)";
         
         $data = [
             'uri_nya'           => $uri_nya,
             'is_kado'           => $is_kado,
+            'font_sampul'       => $font_sampul,
 
             'tittle'            => 'Undangan | '.$user,
             'user'              => $user,
