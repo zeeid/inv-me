@@ -72,17 +72,15 @@
         <div style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)"></div>
         <div class="cover">
             <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
-            <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
-                <table style="width: 100%;color: #fff;" id="yang_depan">
-                    <tr>
-                        <td style="width: 100px;text-align: right"><?= $alias_pw  ?></td>
-                        <td style="width: 1px;text-align: center">|</td>
-                        <td style="width: 100px;text-align: left"><?= $alias_pp ?></td>
-                    </tr>
-                </table>
-                <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:-5px;color: #fff">
-                    <?= $tanggal_acara ?>
+            <div style="color: white;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
+                <div style='display: grid;grid-template-columns: 25px 50px 25px auto;margin-left: 33%;margin-right: 33%;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;'>
+                    <div style="margin-top: -20px;"><?= $alias_pw  ?></div>
+                    <div >|</div>
+                    <div style="margin-top: 20px;"><?= $alias_pp ?></div>
                 </div>
+                <!-- <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:-5px;color: #fff">
+                    <?= $tanggal_acara ?>
+                </div> -->
             </div>
             <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 80px">
                 <p style="color:#fff;font-size: 12px;">Yth.</p>
@@ -117,18 +115,17 @@
                         </div>
                         <div class="cover">
                             <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
-                            <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
-                                <table style="width: 100%;color: #fff;" id="yang_dalam">
-                                    <tr>
-                                        <td style="width: 100px;text-align: right"><?= $alias_pp ?></td>
-                                        <td style="width: 1px;text-align: center">|</td>
-                                        <td style="width: 100px;text-align: left"><?= $alias_pw ?></td>
-                                    </tr>
-                                </table>
-
-                                <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:35px;color: #fff">
-                                    <?= $tanggal_acara ?>
+                            <div style="color: white;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
+                                
+                                <div style='display: grid;grid-template-columns: 25px 50px 25px auto;margin-left: 33%;margin-right: 33%;margin-top: 30px;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;'>
+                                    <div style="margin-top: -20px;"><?= $alias_pw  ?></div>
+                                    <div >|</div>
+                                    <div style="margin-top: 20px;"><?= $alias_pp ?></div>
                                 </div>
+
+                                <!-- <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:35px;color: #fff">
+                                    <?= $tanggal_acara ?>
+                                </div> -->
                             </div>
                             <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 86px">
                                 <p style="color:#fff;font-size: 12px;">Yth.</p>
