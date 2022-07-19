@@ -15,7 +15,7 @@ class Undangan extends BaseController
     public function index($user='',$tamu='')
     {
 
-        $local_dev = "YES";
+        $local_dev = "CDN";
         if ($local_dev=='YES') {
             $uri_nya = base_url();
         }else{

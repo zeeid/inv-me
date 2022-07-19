@@ -190,7 +190,9 @@
 }
 
 .bg-content {
-    background-image: url(<?=base_url()?>/images/tema/ninacharis/bg3.jpg);
+    background-image: url(<?=base_url()?>/images/tema/bg-green002.jpg);
+    /*background-image: url(<?=base_url()?>/images/tema/bg-green.jpg);*/
+    /*background-image: url(<?=$uri_nya?>/images/tema/ninacharis/bg3.jpg);*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -576,223 +578,223 @@ input[type="submit"]:hover {
 @font-face {
     font-family: CreamCandy;
 
-    src: url(<?=base_url()?>/font/CreamCandy-8MMqZ.otf);
+    src: url(<?=$uri_nya?>/font/CreamCandy-8MMqZ.otf);
 }
 
 @font-face {
     font-family: KingWaller;
 
-    src: url(<?=base_url()?>/font/KingWaller-GOyJD.otf);
+    src: url(<?=$uri_nya?>/font/KingWaller-GOyJD.otf);
 }
 
 @font-face {
     font-family: Denalova;
 
-    src: url(<?=base_url()?>/font/Denalova-YzXKa.otf);
+    src: url(<?=$uri_nya?>/font/Denalova-YzXKa.otf);
 }
 
 @font-face {
     font-family: lobster;
 
-    src: url(<?=base_url()?>/font/Lobster.otf);
+    src: url(<?=$uri_nya?>/font/Lobster.otf);
 }
 
 @font-face {
     font-family: PlaylistScript;
 
-    src: url(<?=base_url()?>/font/Playlist_Script.otf);
+    src: url(<?=$uri_nya?>/font/Playlist_Script.otf);
 }
 
 @font-face {
     font-family: belly;
 
-    src: url(<?=base_url()?>/font/BELLY_BETTY.OTF);
+    src: url(<?=$uri_nya?>/font/BELLY_BETTY.OTF);
 }
 
 @font-face {
     font-family: Butler_Regular;
 
-    src: url(<?=base_url()?>/font/Butler_Regular.otf);
+    src: url(<?=$uri_nya?>/font/Butler_Regular.otf);
 }
 
 @font-face {
     font-family: tenor;
 
-    src: url(<?=base_url()?>/font/TenorSans-Regular.ttf);
+    src: url(<?=$uri_nya?>/font/TenorSans-Regular.ttf);
 }
 
 @font-face {
     font-family: saudagar;
 
-    src: url(<?=base_url()?>/font/Saudagar.ttf);
+    src: url(<?=$uri_nya?>/font/Saudagar.ttf);
 }
 
 @font-face {
     font-family: Ansylia;
 
-    src: url(<?=base_url()?>/font/Ansylia.ttf);
+    src: url(<?=$uri_nya?>/font/Ansylia.ttf);
 }
 
 @font-face {
     font-family: RachelRoman;
 
-    src: url(<?=base_url()?>/font/RachelRoman.ttf);
+    src: url(<?=$uri_nya?>/font/RachelRoman.ttf);
 }
 
 @font-face {
     font-family: OliverBlush;
 
-    src: url(<?=base_url()?>/font/OliverBlush.ttf);
+    src: url(<?=$uri_nya?>/font/OliverBlush.ttf);
 }
 
 @font-face {
     font-family: century;
 
-    src: url(<?=base_url()?>/font/CENTURY.TTF);
+    src: url(<?=$uri_nya?>/font/CENTURY.TTF);
 }
 
 @font-face {
     font-family: ColonnaMT;
 
-    src: url(<?=base_url()?>/font/ColonnaMT.ttf);
+    src: url(<?=$uri_nya?>/font/ColonnaMT.ttf);
 }
 
 @font-face {
     font-family: vogue;
 
-    src: url(<?=base_url()?>/font/Vogue.ttf);
+    src: url(<?=$uri_nya?>/font/Vogue.ttf);
 }
 
 @font-face {
     font-family: Baybe;
 
-    src: url(<?=base_url()?>/font/BaybeEvaline.otf);
+    src: url(<?=$uri_nya?>/font/BaybeEvaline.otf);
 }
 
 @font-face {
     font-family: athelas;
 
-    src: url(<?=base_url()?>/font/Athelas-Regular.woff);
+    src: url(<?=$uri_nya?>/font/Athelas-Regular.woff);
 }
 
 @font-face {
     font-family: Amalfi_Coast;
 
-    src: url(<?=base_url()?>/font/Amalfi_Coast.ttf);
+    src: url(<?=$uri_nya?>/font/Amalfi_Coast.ttf);
 }
 
 @font-face {
     font-family: Cherolina;
 
-    src: url(<?=base_url()?>/font/Cherolina.ttf);
+    src: url(<?=$uri_nya?>/font/Cherolina.ttf);
 }
 
 @font-face {
     font-family: Amiri;
 
-    src: url(<?=base_url()?>/font/Amiri-Italic.ttf);
+    src: url(<?=$uri_nya?>/font/Amiri-Italic.ttf);
 }
 
 @font-face {
     font-family: Brigitte;
 
-    src: url(<?=base_url()?>/font/BrigitteEigner.ttf);
+    src: url(<?=$uri_nya?>/font/BrigitteEigner.ttf);
 }
 
 @font-face {
     font-family: Aphrodite;
 
-    src: url(<?=base_url()?>/font/AphroditeSlimPro.ttf);
+    src: url(<?=$uri_nya?>/font/AphroditeSlimPro.ttf);
 }
 
 @font-face {
     font-family: hello;
 
-    src: url(<?=base_url()?>/font/hello_honey.otf);
+    src: url(<?=$uri_nya?>/font/hello_honey.otf);
 }
 
 @font-face {
     font-family: shell;
 
-    src: url(<?=base_url()?>/font/shell_normal.ttf);
+    src: url(<?=$uri_nya?>/font/shell_normal.ttf);
 }
 
 @font-face {
     font-family: runwild;
 
-    src: url(<?=base_url()?>/font/RunWild.ttf);
+    src: url(<?=$uri_nya?>/font/RunWild.ttf);
 }
 
 @font-face {
     font-family: suarte;
 
-    src: url(<?=base_url()?>/font/SuarteFree.ttf);
+    src: url(<?=$uri_nya?>/font/SuarteFree.ttf);
 }
 
 @font-face {
     font-family: kimberia;
 
-    src: url(<?=base_url()?>/font/KimberiaScript.ttf);
+    src: url(<?=$uri_nya?>/font/KimberiaScript.ttf);
 }
 
 @font-face {
     font-family: ArlobunsFree;
 
-    src: url(<?=base_url()?>/font/ArlobunsFree.ttf);
+    src: url(<?=$uri_nya?>/font/ArlobunsFree.ttf);
 }
 
 @font-face {
     font-family: coneriascript;
 
-    src: url(<?=base_url()?>/font/Demo_ConeriaScript.ttf);
+    src: url(<?=$uri_nya?>/font/Demo_ConeriaScript.ttf);
 }
 
 @font-face {
     font-family: heart;
 
-    src: url(<?=base_url()?>/font/BrokenHeart.ttf);
+    src: url(<?=$uri_nya?>/font/BrokenHeart.ttf);
 }
 
 @font-face {
     font-family: glacial;
 
-    src: url(<?=base_url()?>/font/GlacialIndifference.otf);
+    src: url(<?=$uri_nya?>/font/GlacialIndifference.otf);
 }
 
 @font-face {
     font-family: aisyah;
 
-    src: url(<?=base_url()?>/font/Aisyah-Demo.otf);
+    src: url(<?=$uri_nya?>/font/Aisyah-Demo.otf);
 }
 
 @font-face {
     font-family: CalendaryHands;
 
-    src: url(<?=base_url()?>/font/CalendaryHands.ttf);
+    src: url(<?=$uri_nya?>/font/CalendaryHands.ttf);
 }
 
 @font-face {
     font-family: signature;
 
-    src: url(<?=base_url()?>/font/AmostelySignature.ttf);
+    src: url(<?=$uri_nya?>/font/AmostelySignature.ttf);
 }
 
 @font-face {
     font-family: sweet;
 
-    src: url(<?=base_url()?>/font/SweetHipster.ttf);
+    src: url(<?=$uri_nya?>/font/SweetHipster.ttf);
 }
 
 @font-face {
     font-family: baskerville;
 
-    src: url(<?=base_url()?>/font/Baskerville.ttf);
+    src: url(<?=$uri_nya?>/font/Baskerville.ttf);
 }
 
 @font-face {
     font-family: trajan;
 
-    src: url(<?=base_url()?>/font/TrajanPro-Regular.ttf);
+    src: url(<?=$uri_nya?>/font/TrajanPro-Regular.ttf);
 }
 
 #page-navigation {

@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Undangan Website Pernikahan">
-    <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= $user ?>" />
+    <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= strtoupper($user) ?>" />
     
     <link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/mother-tongue---personal-use" rel="stylesheet">
@@ -75,9 +75,9 @@
             <div style="color: #c79931;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
                 <table style="width: 100%;color: #fff;" id="yang_depan">
                     <tr>
-                        <td style="width: 100px;text-align: right"><?= $alias_pp ?></td>
+                        <td style="width: 100px;text-align: right"><?= $alias_pw  ?></td>
                         <td style="width: 1px;text-align: center">|</td>
-                        <td style="width: 100px;text-align: left"><?= $alias_pw ?></td>
+                        <td style="width: 100px;text-align: left"><?= $alias_pp ?></td>
                     </tr>
                 </table>
                 <div style="font-family: 'Josefin Slab', serif;font-size:12px;margin-top:-5px;color: #fff">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="rsContent slide1 bg-content" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;background-blend-mode: color-dodge;">
+                    <div class="rsContent slide1 bg-content" style="background-image:url(<?=$desain['cover_dalam']?>);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
                         <!-- <div class="cover" style="display: <?php if($desain['file_logo_depan']==''){echo "none";}else{echo "block";} ?>">
                             <div class="cover_nama" style="width: 300px;color: #fff;margin-left: -150px;margin-top: -200px;text-align:center">
                                 <div style="margin-bottom:17px" class="rsABlock txtCent" data-move-offset="50" data-delay="100" data-speed="800" data-move-effect="bottom">
@@ -214,10 +214,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'];  ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'];  ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -251,32 +251,11 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    
                                     <tr>
                                         <td style="text-align: center;vertical-align: top" colspan="2">
                                             <div class="rsABlock" data-move-offset="50" data-delay="200"
                                                 data-speed="800" data-move-effect="bottom" style="margin-top: 20px;">
-                                                <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pp)) ?></span><br>
-                                                <img src="<?=$uri_nya?>/images/library/line_9b6215.png" style="width: 180px;">
-                                                <div class="font_lebel_mempelai">Putra dari</div>
-                                                <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
-                                                    Bapak <?= ucwords(strtolower($nama_ayah_pp)) ?>
-                                                    <br>
-                                                    Ibu <?= ucwords(strtolower($nama_ibu_pp)) ?>
-                                                </span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="padding: 5px;text-align:center;"><span class="rsABlock"
-                                                data-move-offset="50" data-delay="200" data-speed="800"
-                                                data-move-effect="none"
-                                                style="font-family: 'Dancing Script', cursive;font-size: 25px;">&</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: center;vertical-align: top" colspan="2">
-                                            <div class="rsABlock" data-move-offset="50" data-delay="200"
-                                                data-speed="800" data-move-effect="bottom">
                                                 <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pw)) ?></span><br>
                                                 <img src="<?=$uri_nya?>/images/library/line_9b6215.png" style="width: 180px;">
                                                 <div class="font_lebel_mempelai">Putri dari</div>
@@ -288,6 +267,32 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    
+                                    <tr>
+                                        <td colspan="2" style="padding: 5px;text-align:center;"><span class="rsABlock"
+                                                data-move-offset="50" data-delay="200" data-speed="800"
+                                                data-move-effect="none"
+                                                style="font-family: 'Dancing Script', cursive;font-size: 25px;">&</span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td style="text-align: center;vertical-align: top" colspan="2">
+                                            <div class="rsABlock" data-move-offset="50" data-delay="200"
+                                                data-speed="800" data-move-effect="bottom" >
+                                                <span class="font_nama_mempelai"><?= ucwords(strtolower($nama_lengkap_pp)) ?></span><br>
+                                                <img src="<?=$uri_nya?>/images/library/line_9b6215.png" style="width: 180px;">
+                                                <div class="font_lebel_mempelai">Putra dari</div>
+                                                <span class="font_ortu" style="font-family: 'Glacial Indifference', sans-serif;">
+                                                    Bapak <?= ucwords(strtolower($nama_ayah_pp)) ?>
+                                                    <br>
+                                                    Ibu <?= ucwords(strtolower($nama_ibu_pp)) ?>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    
                                 </table>
                             </div>
                         </div>
@@ -304,10 +309,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -351,7 +356,7 @@
                                                         </b>
                                                         <div style="margin-top:3px;">
                                                             <small>
-                                                                <?= $waktu_akad ?> WIB - Selesai
+                                                                <?= $waktu_akad ?> - <?= $waktu_resepsi ?> WIB
                                                             </small>
                                                         </div>
                                                     </div>
@@ -419,7 +424,7 @@
                                                         </b>
                                                         <div style="margin-top:3px;">
                                                             <small>
-                                                                <?= $waktu_resepsi ?> WIB
+                                                                <?= $waktu_resepsi ?> WIB - Selesai
                                                             </small>
                                                         </div>
                                                     </div>
@@ -467,7 +472,7 @@
                                                 <div style="font-size: 13px">
                                                     <div class="rsABlock" data-move-offset="50" data-delay="1000"
                                                         data-speed="1000" data-move-effect="left">
-                                                        Hitung Mundur Acara <b style="color:#9b6215">Resepsi</b></div>
+                                                        Hitung Mundur Acara <b style="color:#9b6215"> </b></div>
                                                     <br>
                                                 </div>
                                             </td>
@@ -532,10 +537,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -544,7 +549,7 @@
 
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -265px;text-align:center">
-                                <div style="width: 350px;">
+                                <div style="width: 350px;margin-top: 15px;">
                                     <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Peta Lokasi</div>
@@ -641,10 +646,10 @@
 
 
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -665,17 +670,32 @@
                                             style="text-align:center;margin-bottom: 10px;font-size:12px;padding:0px 20px">
                                             <?= $ucapan_kado ?>
                                             <br>
-                                            <img src="<?=$uri_nya?>/images/librari/mandiri.png" style="width: 80px;"><br>
-                                            <b>
-                                                <?= $no_rek_1 ?><br>
-                                                a/n <?= $nama_rek_1 ?>
-                                            </b><br><br><br>
-                                            <img src=""
-                                                style="width: 80px;"><br>
-                                            <b>
-                                                <?= $no_rek_2 ?><br>
-                                                a/n <?= $nama_rek_2 ?>
-                                            </b>
+                                            <?php
+                                                $is_qris = "YES";
+                                                if($is_qris=="YES"){
+                                                    ?>
+                                                        <div id="jika_rekening" style="margin-top: 10px;">
+                                                            <img src="<?=base_url()?>/images/qris-crop.jpg" style="width: 80%;"><br>
+                                                        </div>
+                                                    <?php
+                                                }else{
+                                                    ?>
+                                                        <div id="jika_rekening">
+                                                            <img src="<?=$uri_nya?>/images/librari/mandiri.png" style="width: 80px;"><br>
+                                                            <b>
+                                                                <?= $no_rek_1 ?><br>
+                                                                a/n <?= $nama_rek_1 ?>
+                                                            </b><br><br><br>
+                                                            <img src=""
+                                                                style="width: 80px;"><br>
+                                                            <b>
+                                                                <?= $no_rek_2 ?><br>
+                                                                a/n <?= $nama_rek_2 ?>
+                                                            </b>
+                                                        </div>
+                                                    <?php
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -690,10 +710,10 @@
 
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -724,7 +744,7 @@
                                             <table style="width:100%">
                                                 <tr>
                                                     <td style="vertical-align:top;padding:5px 10px;text-align:right">
-                                                        <br>Suhu tubuh normal<br>(dibawah 37,5°C)</td>
+                                                        <br>Suhu tubuh normal<br>(dibawah 37,5 &#x2103;)</td>
                                                     <td style="width:50px"><img
                                                             src="<?=$uri_nya?>/images/librari/covid/temperatur_black.png"
                                                             style="height:auto;width: 50px;"></td>
@@ -763,10 +783,10 @@
                     </div>
                     <div class="rsContent slide2 bg-content">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_atas'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= $desain['hiasan_bawah'] ?>"
+                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
                             style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
                         <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
                             data-move-effect="none"
@@ -777,16 +797,16 @@
                                 <div style="width: 350px;">
                                     <div style="margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
-                                        <div style="font-size: 12px;margin-bottom: 15px;padding: 0px 20px"><br><br>
-                                            <p><?= $pesan_cerita ?></p>
+                                        <div style="font-size: 12px;margin-bottom: 35px;padding: 0px 20px"><br><br>
+                                            <p><?= nl2br(str_replace(' ', '  ', htmlspecialchars(ucwords($pesan_cerita))));  ?></p>
                                         </div>
                                         <div style="padding: 0px 20px;color:#9b6215;" class="rsABlock"
                                             data-move-offset="50" data-delay="200" data-speed="800"
                                             data-move-effect="top">
-                                            <div style="font-size: 27px;font-family: '', cursive;">
-                                                <?= $nama_pp ?>
-                                                <span style='color:#333'>&</span>
+                                            <div style='font-size: 190%;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bolder;'>
                                                 <?= $nama_pw ?>
+                                                <span style='color:#333'>&</span>
+                                                <?= $nama_pp ?>
                                             </div>
                                         </div>
                                         <div style="text-align: center;margin-top: 70px" id="btn_ucapan">
