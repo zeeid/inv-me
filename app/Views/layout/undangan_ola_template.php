@@ -153,16 +153,17 @@
                         </div> -->
                         <div class="cover_dua" style="margin-left: -150px;margin-top: -37px;font-family: 'Josefin Slab', serif;text-align:center;">
                             <div style="width: 300px;">
-                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: #ffa700;font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
+                                <div style="text-align: center;color:rgb(252, 158, 255);padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
+                                <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: rgb(252, 158, 255);font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
-                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 85%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
-                                    <div style="text-align: center;color:#ffa700;padding: 20px 0px 5px 0px;font-size:14px;padding-top: 5px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">The Wedding of</div>
+                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 111%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
+                                    
                                     <div style="text-align: center" class="rsABlock txtCent" data-move-offset="50" data-delay="1000" data-speed="800" data-move-effect="top">
-                                        <table style="width: 100%;color:#ffa700">
+                                        <table style="width: 100%;color:rgb(252, 158, 255)">
                                             <tr>
                                                 <td></td>
-                                                <td style="border-top: 1px solid #ffa700;border-bottom: 1px solid #ffa700;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid rgb(252, 158, 255);border-bottom: 1px solid rgb(252, 158, 255);width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $hari ?>
                                                     </b>
@@ -177,7 +178,7 @@
                                                         <?= $tahun ?>
                                                     </div>
                                                 </td>
-                                                <td style="border-top: 1px solid #ffa700;border-bottom: 1px solid #ffa700;width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
+                                                <td style="border-top: 1px solid rgb(252, 158, 255);border-bottom: 1px solid rgb(252, 158, 255);width: 150px;text-align: center;padding: 5px 0px 0px 0px;width: 85px;font-size:18px">
                                                     <b>
                                                         <?= $bulan ?>
                                                     </b>
@@ -641,71 +642,74 @@
 
                     </div>
 
-
-                    <div class="rsContent slide2 bg-content">
-
-
-                        <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
-                            style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
-                        <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
-                            data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
-                            style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
-                        <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
-                            data-move-effect="none"
-                            style="background-color: rgb(255, 255, 255, 0.2);border-radius: 10px;position: absolute;top: 20px;bottom: 60px;left: 20px;right: 20px;box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.7), 0 1px 8px 0 rgba(100, 100, 100, 0.7);z-index: 0;">
-                        </div>
-
-                        <div class="cover">
-                            <div style="margin-left:-175px;width: 350px;margin-top: -220px;text-align:center">
-                                <div style="width: 350px;">
-                                    <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
-                                        data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
-                                        Kado</div>
-                                    <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
-                                        data-delay="200" data-speed="800" data-move-effect="top">
-                                        <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
-                                            style="height:1px;width: 70px;padding:0px 10px 10px 10px;">
-                                        <div
-                                            style="text-align:center;margin-bottom: 10px;font-size:12px;padding:0px 20px">
-                                            <?= $ucapan_kado ?>
-                                            <br>
-                                            <?php
-                                                $is_qris = "YES";
-                                                if($is_qris=="YES"){
-                                                    ?>
-                                                        <div id="jika_rekening" style="margin-top: 10px;">
-                                                            <img src="<?=base_url()?>/images/qris-crop.jpg" style="width: 80%;"><br>
-                                                        </div>
-                                                    <?php
-                                                }else{
-                                                    ?>
-                                                        <div id="jika_rekening">
-                                                            <img src="<?=$uri_nya?>/images/librari/mandiri.png" style="width: 80px;"><br>
-                                                            <b>
-                                                                <?= $no_rek_1 ?><br>
-                                                                a/n <?= $nama_rek_1 ?>
-                                                            </b><br><br><br>
-                                                            <img src=""
-                                                                style="width: 80px;"><br>
-                                                            <b>
-                                                                <?= $no_rek_2 ?><br>
-                                                                a/n <?= $nama_rek_2 ?>
-                                                            </b>
-                                                        </div>
-                                                    <?php
-                                                }
-                                            ?>
+                    <?php 
+                        if ($is_kado=="YES") {
+                            ?>
+                                <div id="kado_div_awal" class="rsContent slide2 bg-content" >
+                                    <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
+                                        data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
+                                        style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
+                                    <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
+                                        data-move-effect="none" src="<?= ($desain['file_hiasan_bawah']=='') ? '' : $desain['hiasan_bawah'] ?>"
+                                        style="width:130px;bottom:0px;position: absolute;left: 0px;z-index: 0;">
+                                    <div class="rsABlock" data-move-offset="450" data-delay="0" data-speed="1200"
+                                        data-move-effect="none"
+                                        style="background-color: rgb(255, 255, 255, 0.2);border-radius: 10px;position: absolute;top: 20px;bottom: 60px;left: 20px;right: 20px;box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.7), 0 1px 8px 0 rgba(100, 100, 100, 0.7);z-index: 0;">
+                                    </div>
+            
+                                    <div class="cover">
+                                        <div style="margin-left:-175px;width: 350px;margin-top: -220px;text-align:center">
+                                            <div style="width: 350px;">
+                                                <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
+                                                    data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
+                                                    Kado</div>
+                                                <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
+                                                    data-delay="200" data-speed="800" data-move-effect="top">
+                                                    <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
+                                                        style="height:1px;width: 70px;padding:0px 10px 10px 10px;">
+                                                    <div
+                                                        style="text-align:center;margin-bottom: 10px;font-size:12px;padding:0px 20px">
+                                                        <?= $ucapan_kado ?>
+                                                        <br>
+                                                        <?php
+                                                            $is_qris = "YES";
+                                                            if($is_qris=="YES"){
+                                                                ?>
+                                                                    <div id="jika_rekening" style="margin-top: 10px;">
+                                                                        <img src="<?=base_url()?>/images/qris-crop.jpg" style="width: 80%;"><br>
+                                                                    </div>
+                                                                <?php
+                                                            }else{
+                                                                ?>
+                                                                    <div id="jika_rekening">
+                                                                        <img src="<?=$uri_nya?>/images/librari/mandiri.png" style="width: 80px;"><br>
+                                                                        <b>
+                                                                            <?= $no_rek_1 ?><br>
+                                                                            a/n <?= $nama_rek_1 ?>
+                                                                        </b><br><br><br>
+                                                                        <img src=""
+                                                                            style="width: 80px;"><br>
+                                                                        <b>
+                                                                            <?= $no_rek_2 ?><br>
+                                                                            a/n <?= $nama_rek_2 ?>
+                                                                        </b>
+                                                                    </div>
+                                                                <?php
+                                                            }
+                                                        ?>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div id="tulisan_kado_bawah" class="rsTmb" data-rsw="632" data-rsh="500" >
+                                        <i class="fa fa-gift" style="margin-top: 10px;font-size: 17px;"></i>
+                                        <div style="font-size: 10px">Kado</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="rsTmb" data-rsw="632" data-rsh="500"><i class="fa fa-gift"
-                                style="margin-top: 10px;font-size: 17px"></i>
-                            <div style="font-size: 10px">Kado</div>
-                        </div>
-                    </div>
+                            <?php
+                        }
+                    ?>
 
 
                     <div class="rsContent slide2 bg-content">

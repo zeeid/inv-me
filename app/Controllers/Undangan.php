@@ -72,9 +72,19 @@ class Undangan extends BaseController
 
             // die();
         // =============== END GET GALERI ==================
+
+        // ====== KADO =====
+            $is_kado = "YES";
+            if ($is_kado =="YES") {
+                $is_kado = "block";
+            }else{
+                $is_kado = "none";
+            }
+        // ====== KADO =====
         
         $data = [
             'uri_nya'           => $uri_nya,
+            'is_kado'           => $is_kado,
 
             'tittle'            => 'Undangan | '.$user,
             'user'              => $user,
