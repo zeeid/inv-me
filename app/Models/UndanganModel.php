@@ -233,4 +233,18 @@ class UndanganModel extends Model
         }
 
     }
+    
+    public function get_ucapan($kode_pasangan){
+
+        $get_ucapan = $this->db->table('undangan_tamu')
+        ->where('kode_pasangan', $kode_pasangan)
+        ->where('ucapan !=', '')
+        ->get()
+        ->getResultArray()
+        ;
+        
+        // dd($get_ucapan);
+        
+        return $get_ucapan;
+    }
 }

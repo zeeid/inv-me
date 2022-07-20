@@ -15,7 +15,7 @@ class Undangan extends BaseController
     public function index($user='',$tamu='')
     {
 
-        $local_dev = "YES";
+        $local_dev = "CDN";
         if ($local_dev=='YES') {
             $uri_nya = base_url();
         }else{
@@ -55,11 +55,13 @@ class Undangan extends BaseController
 
         $get_tamu           = $this->UndanganModel->get_tamu($tamu);
 
+        $get_ucapan         = $this->UndanganModel->get_ucapan($get_data['kode_pasangan']);
 
         // =============== GET GALERI ======================
             $get_galeri = $this->db->table('undangan_galeri')
             ->select('gambarnya')
             ->where('kode_pasangan', $get_data['kode_pasangan'])
+            ->orderBy('created_at', 'ASC')
             ->get()
             ->getResultArray()
             ;
@@ -83,7 +85,7 @@ class Undangan extends BaseController
         // ====== KADO =====
 
         // WARNA FONT SAMPUL
-        $font_sampul = "rgb(252, 158, 255)";
+        $font_sampul = "azure";
         
         $data = [
             'uri_nya'           => $uri_nya,
@@ -154,6 +156,7 @@ class Undangan extends BaseController
             'url_galeri'        => $url_galeri,
 
             'get_tamu'          => $get_tamu,
+            'get_ucapan'        => $get_ucapan,
         ];
 
         return view('layout/undangan_ola_template',$data);

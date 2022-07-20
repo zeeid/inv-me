@@ -7,10 +7,10 @@
     <meta name="description" content="Undangan Website Pernikahan">
     <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= strtoupper($user) ?>" />
     
-    <link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/mother-tongue---personal-use" rel="stylesheet">
     <!-- FONT NAMA ORTU -->
-    <link href="http://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+    <!--<link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">-->
+    <!--<link href="http://fonts.cdnfonts.com/css/mother-tongue---personal-use" rel="stylesheet">-->
+    <!--<link href="http://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">-->
                 
 
     <meta property="og:description" content="<?= $tanggal." - ".$bulan." - ".$tahun ?>">
@@ -72,8 +72,8 @@
         <div style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;background: rgba( 0,0,0,0.6)"></div>
         <div class="cover">
             <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
-            <div style="color: white;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
-                <div style='display: grid;grid-template-columns: 25px 50px 25px auto;margin-left: 33%;margin-right: 33%;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;'>
+            <div style="color: white;width: 300px;margin-left: -150px;text-align: center;margin-top: -170px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
+                <div style='display: grid;grid-template-columns: 35px 30px 25px auto;margin-left: 34%;margin-right: 34%;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;margin-top: 25px;'>
                     <div style="margin-top: -20px;"><?= $alias_pw  ?></div>
                     <div >|</div>
                     <div style="margin-top: 20px;"><?= $alias_pp ?></div>
@@ -82,7 +82,7 @@
                     <?= $tanggal_acara ?>
                 </div> -->
             </div>
-            <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 80px">
+            <div style="width: 300px;margin-left: -150px;text-align: center;margin-top: 60px">
                 <p style="color:#fff;font-size: 12px;">Yth.</p>
                 <p style="color:#e3c251;font-size: 17px;margin-bottom: 10px"><?= $nama_tamu ?></p>
                 <img src="<?=$uri_nya?>/images/librari/line_ffffff.png" style="width: 200px;margin-top:-5px;margin-bottom:5px;">
@@ -117,7 +117,7 @@
                             <img src="<?=$desain['hiasan_depan']?>" style="width: 190px;margin-left: -95px;margin-top: -120px;">
                             <div style="color: white;width: 300px;margin-left: -150px;text-align: center;margin-top: -155px;font-family: 'Cormorant Garamond', serif;font-size: 52px">
                                 
-                                <div style='display: grid;grid-template-columns: 25px 50px 25px auto;margin-left: 33%;margin-right: 33%;margin-top: 30px;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;'>
+                                <div style='display: grid;grid-template-columns: 35px 30px 25px auto;margin-left: 35%;margin-right: 35%;margin-top: 50px;font-family: "Mother Tongue - Personal Use", sans-serif;font-weight: bold;'>
                                     <div style="margin-top: -20px;"><?= $alias_pw  ?></div>
                                     <div >|</div>
                                     <div style="margin-top: 20px;"><?= $alias_pp ?></div>
@@ -154,7 +154,7 @@
                                 <div class="cover_nama rsABlock txtCent" style="font-family: 'Mother Tongue - Personal Use', sans-serif;color: <?=$font_sampul?>;font-weight: bolder;font-size: 190%;" data-move-offset="50" data-delay="100" data-speed="1000" data-move-effect="none">
                                     <?= $nama_pw ?> <small>&</small> <?= $nama_pp ?>
                                 </div>
-                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 111%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
+                                <div id="box_acara_sampul" style="font-size: 14px;color: #6d071a;margin-top: 98%; /*! background-color: #ffffff85; */ height: 64px;border-radius: 21px;" class="rsABlock txtCent" data-move-offset="50" data-delay="800" data-speed="800" data-move-effect="top">
                                     
                                     <div style="text-align: center" class="rsABlock txtCent" data-move-offset="50" data-delay="1000" data-speed="800" data-move-effect="top">
                                         <table style="width: 100%;color:<?=$font_sampul?>">
@@ -322,7 +322,7 @@
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -230px;text-align:center">
                                 <div style="width: 350px;">
-                                    <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
+                                    <div style="font-size: 24px;font-family: 'Aulyars Italic', cursive;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Rangkaian Acara</div>
                                     <div style="font-size: 14px">
@@ -336,7 +336,7 @@
                                                     </td>
                                                     <td
                                                         style="color: #9b6215;text-align: center;padding: 0px 15px;white-space: nowrap;width: 1px">
-                                                        AKAD</td>
+                                                        Akad</td>
                                                     <td><img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
                                                             style="height:1px;width: 100%;padding:0px 10px 5px 0px;">
                                                     </td>
@@ -470,7 +470,10 @@
                                                 <div style="font-size: 13px">
                                                     <div class="rsABlock" data-move-offset="50" data-delay="1000"
                                                         data-speed="1000" data-move-effect="left">
-                                                        Hitung Mundur Acara <b style="color:#9b6215"> </b></div>
+                                                        &nbsp; <b style="color:#9b6215"> </b></div>
+                                                    <!--<div class="rsABlock" data-move-offset="50" data-delay="1000"-->
+                                                    <!--    data-speed="1000" data-move-effect="left">-->
+                                                    <!--    Hitung Mundur Acara <b style="color:#9b6215"> </b></div>-->
                                                     <br>
                                                 </div>
                                             </td>
@@ -547,11 +550,11 @@
 
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -265px;text-align:center">
-                                <div style="width: 350px;margin-top: 15px;">
-                                    <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
+                                <div style="width: 350px;margin-top: 20px;">
+                                    <div style="font-size: 24px;font-family: 'Aulyars Italic';" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Peta Lokasi</div>
-                                    <div style="margin-top: 15px" class="rsABlock" data-move-offset="50"
+                                    <div style="margin-top: 5px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
 
                                         <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
@@ -723,7 +726,7 @@
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -220px;text-align:center">
                                 <div style="width: 350px;">
-                                    <div style="font-size: 24px;font-family: 'Redressed', cursive;" class="rsABlock"
+                                    <div style="font-size: 24px;font-family: 'Aulyars Italic';" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Pencegahan Covid-19</div>
                                     <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
@@ -782,7 +785,7 @@
                             <div style="font-size: 10px">Protokol</div>
                         </div>
                     </div>
-                    <div class="rsContent slide2 bg-content">
+                    <div id="penutup_div" class="rsContent slide2 bg-content penutup_div">
                         <img class="rsABlock" data-move-offset="450" data-delay="600" data-speed="800"
                             data-move-effect="none" src="<?= ($desain['file_hiasan_atas']=='') ? '' : $desain['hiasan_atas'] ?>"
                             style="width:130px;top:0px;position: absolute;right: 0px;z-index: 0;">
@@ -794,7 +797,7 @@
                             style="background-color: rgb(255, 255, 255, 0.2);border-radius: 10px;position: absolute;top: 20px;bottom: 60px;left: 20px;right: 20px;box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.7), 0 1px 8px 0 rgba(100, 100, 100, 0.7);z-index: 0;">
                         </div>
                         <div class="cover">
-                            <div style="margin-left:-175px;width: 350px;margin-top: -240px;text-align:center">
+                            <div id="penutup_disini" style="margin-left:-175px;width: 350px;margin-top: -46vh;text-align:center">
                                 <div style="width: 350px;">
                                     <div style="margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
@@ -810,7 +813,7 @@
                                                 <?= $nama_pp ?>
                                             </div>
                                         </div>
-                                        <div style="text-align: center;margin-top: 70px" id="btn_ucapan">
+                                        <div style="text-align: center;margin-top: 50px" id="btn_ucapan">
                                             <button type="button" class="button" onclick="Pesan()"
                                                 style="margin-top: -42px;"><img src="<?=$uri_nya?>/images/librari/pen_black.png"
                                                     style="width: 30px;">
@@ -819,6 +822,63 @@
                                                 </span>
                                             </button>
                                         </div>
+                                    </div>
+                                </div>
+                                
+                                <style>
+                                    .list_ucapan {
+                                        width: 300px;
+                                        height: 160px;
+                                        background-color: #e1e1e0;
+                                        padding: 10px;
+                                        margin-left: 15px;
+                                        margin-right: 15px;
+                                        margin-top: 15px;
+                                        border-radius: 10px;
+                                        overflow: scroll;
+                                    }
+                                    .font_ucapan{
+                                        text-align: justify;
+                                        font-size: small;
+                                    }
+                                    .user_ucapan{
+                                        width: 100px;
+                                        font-size: small;
+                                        text-align: left;
+                                    }
+                                    .ucapan_tr{
+                                        border-top: 10px solid;
+                                        border-bottom: 10px solid;
+                                        border-color: transparent;
+                                    }
+                                </style>
+                                
+                                <div id="list_ucapan" class="list_ucapan rsABlock" 
+                                            data-move-offset="50" data-delay="200" data-speed="800"
+                                            data-move-effect="left">
+                                    <div id="komentar1">
+                                        <table>
+                                            
+                                            <?php 
+                                                $row = json_encode($get_ucapan,true);
+                                                
+                                                
+                                                
+                                                
+                                                foreach ($get_ucapan as $ucapan) {
+                                                // while($row = $get_ucapan) {
+                                                  ?>
+                                                    <tr class="ucapan_tr">
+                                                        <td class="user_ucapan"><?=$ucapan['nama_tamu'];?></td>
+                                                        <td> &nbsp;&nbsp; </td>
+                                                        <td class="font_ucapan"><?=$ucapan['ucapan'];?></td>
+                                                    </tr>
+                                                  
+                                                  <?php
+                                                }
+                                            ?>
+                                            
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -845,6 +905,7 @@
             <div style="padding: 0px;position: relative;background-color: #ccbfb9;">
                 <div style="padding: 20px;position: relative;">
                     <form id="form_ucapan">
+                        <input type="hidden" id="<?= csrf_token() ?>" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
                         <div style="border-radius: 15px;background-color: #dadfe5;padding: 0px 15px 10px 15px;border: 5px solid #fff;box-shadow: 0 2px 7px rgba(0, 0, 0, 0.7);   ">
                             <div style="text-align: center;color: #39404a;margin-bottom: 10px;margin-top:20px">
                                 <h4><img src="<?=$uri_nya?>/images/librari/pen_grey.png" style="height: 35px;margin-bottom: 0px;">
@@ -856,7 +917,7 @@
                                 <tr>
                                     <td style="text-align: left;padding-top: 0px">
                                         <div><b>Nama </b></div>
-                                        <input type="hidden" name="kode_pasangan" value="<?=$kode_pasangan?>">
+                                        <input type="hidden" id="kode_pasangan" name="kode_pasangan" value="<?=$kode_pasangan?>">
                                         <input type="hidden" name="id_tamu" value="<?=$get_tamu['id_tamu']?>">
                                         <input required type="text" id="nama" placeholder="Ketik nama anda" value="<?= ucwords($nama_tamu); ?>" required="required">
                                     </td>
@@ -906,6 +967,10 @@
                                     </span>
                                 </button>
                             </div>
+                        </div>
+                        
+                        <div id="debug">
+                            
                         </div>
 
                     </form>

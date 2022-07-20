@@ -5,6 +5,37 @@
     font-family: "Aulyars Italic";
     src: url('https://cdn.jsdelivr.net/gh/zeeid/inv-me/public/font/Aulyars%20Italic.otf');
     }
+    
+    
+@font-face {
+    font-family: 'Kiraly';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kiraly'), url('https://fonts.cdnfonts.com/s/47597/Kiraly Demo.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Mother Tongue - Personal Use';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mother Tongue - Personal Use'), url('https://fonts.cdnfonts.com/s/34371/Mother Tongue.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Glacial Indifference'), url('https://fonts.cdnfonts.com/s/19355/GlacialIndifference-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Glacial Indifference';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Glacial Indifference'), url('https://fonts.cdnfonts.com/s/19355/GlacialIndifference-Bold.woff') format('woff');
+}
+
+
+    
 /* SETTING FONT EKSTERNAL */
 
 #slider-with-blocks-1 {

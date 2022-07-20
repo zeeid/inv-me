@@ -1,21 +1,59 @@
-
 <script>
+
+    function refresh_ucapan(){
+        var kode_pasangan = $("#kode_pasangan").val()
+        var kunciku = $("#kunciku").val()
+        $.ajax({
+            type: "POST",
+            url: "<?=base_url()?>/get_ucapan",
+            data: 'kode_pasangan='+kode_pasangan+"&kunciku="+kunciku,
+            beforeSend: function() {
+                // setting a timeout
+                // $("#loading_ucapan").html('<i class="fa fa-spinner fa-spin"></i> Mohon Tunggu, Sedang Mengirim Ucapan ^_^');
+            },
+            success: function (hasil) {
+                $("#komentar1").html(hasil)
+                
+                // if(hasil=='OKE'){
+                //     $("#loading_ucapan").html('Berhasil Mengirim Ucapan ^_^');
+                //     window.setTimeout(function(){
+                //         BatalPesan()
+                //     }, 2000);
+                // }
+                
+                // document.getElementById('pesan').style.display = 'none';
+                // $(".royalSlider").royalSlider('goTo', 8);
+                // document.getElementById('btn_ucapan').style.display = 'none';
+            }
+        });
+    }
+
     $("#form_ucapan").submit(function (e) { 
         e.preventDefault();
         var data = $("#form_ucapan").serialize();
 
         $.ajax({
             type: "POST",
-            url: "api/kirim_ucapan",
+            url: "<?=base_url()?>/kirim_ucapan",
             data: data,
             beforeSend: function() {
                 // setting a timeout
                 $("#loading_ucapan").html('<i class="fa fa-spinner fa-spin"></i> Mohon Tunggu, Sedang Mengirim Ucapan ^_^');
             },
-            success: function (response) {
-                document.getElementById('pesan').style.display = 'none';
-                $(".royalSlider").royalSlider('goTo', 8);
-                document.getElementById('btn_ucapan').style.display = 'none';
+            success: function (hasil) {
+                // $("#debug").html(hasil)
+                
+                if(hasil=='OKE'){
+                    $("#loading_ucapan").html('Berhasil Mengirim Ucapan ^_^');
+                    refresh_ucapan()
+                    window.setTimeout(function(){
+                        BatalPesan()
+                    }, 3000);
+                }
+                
+                // document.getElementById('pesan').style.display = 'none';
+                // $(".royalSlider").royalSlider('goTo', 8);
+                // document.getElementById('btn_ucapan').style.display = 'none';
             }
         });
     });
@@ -101,8 +139,11 @@ jQuery(document).ready(function($) {
         thumbs: {
             appendSpan: true,
             firstMargin: true,
-            paddingBottom: 4
-        }
+            paddingBottom: 4,
+            arrows: true
+        },
+        sliderDrag:true,
+        sliderTouch:true,
     });
 });
 </script>

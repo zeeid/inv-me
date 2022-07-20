@@ -34,7 +34,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
+$routes->POST('/kirim_ucapan', 'Tamu::index');
 $routes->get('/', 'Undangan::index/$1');
+$routes->post('/get_ucapan', 'Tamu::get_ucapan');
 
 // ========= SETTING ROUTE ===========
 // $routes->METODE('/ALAMAT', 'CONTROLLER::METHOT FUNGSI');
@@ -60,7 +62,7 @@ $routes->get('/users', 'Admin\Users::index');
 $routes->delete('/crud/detail/(:num)', 'Crud::delete/$1');
 $routes->get('/crud/detail/(:any)', 'Crud::detail/$1');
 
-$routes->get('/(:segment)/(:segment)', 'Undangan::index/$1/$2');
+$routes->get('/(:any)/(:segment)', 'Undangan::index/$1/$2');
 
 /*
  * --------------------------------------------------------------------
