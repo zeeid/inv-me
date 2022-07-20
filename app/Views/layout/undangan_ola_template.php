@@ -191,13 +191,13 @@
                         <div style="position: absolute;bottom: 50px;left: 0px ; right: 0px;text-align: center"
                             class="rsABlock txtCent" data-move-offset="50" data-delay="2333" data-speed="800"
                             data-move-effect="bottom">
-                            <div style="text-align: center;color: #a98863">
+                            <div style="text-align: center;color: azure">
                                 <div class="animation_swipup">
                                     <div>
-                                        <i class="fa fa-chevron-up" style="color: #a98863;font-size: 15px;margin-left:0px;"></i>
+                                        <i class="fa fa-chevron-up" style="color: azure;font-size: 15px;margin-left:0px;"></i>
                                     </div>
                                     <div style="margin-top: -5px">
-                                        <i class="fa fa-chevron-up" style="color: #a98863;font-size: 15px;margin-left:0px;"></i>
+                                        <i class="fa fa-chevron-up" style="color: azure;font-size: 15px;margin-left:0px;"></i>
                                     </div>
                                 </div>
                                 <div style="font-size: 10px;margin-top:-20px">
