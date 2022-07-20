@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="<?=$uri_nya?>/kj.webp">
+    <link rel="icon" type="image/x-icon" href="<?=$uri_nya?>/KJ.ico">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Undangan Website Pernikahan">
