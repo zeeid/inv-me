@@ -322,7 +322,7 @@
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -230px;text-align:center">
                                 <div style="width: 350px;">
-                                    <div style="font-size: 24px;font-family: 'Aulyars Italic', cursive;" class="rsABlock"
+                                    <div style="font-size: 24px;font-family: Boomolla;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Rangkaian Acara</div>
                                     <div style="font-size: 14px">
@@ -551,7 +551,7 @@
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -265px;text-align:center">
                                 <div style="width: 350px;margin-top: 20px;">
-                                    <div style="font-size: 24px;font-family: 'Aulyars Italic';" class="rsABlock"
+                                    <div style="font-size: 24px;font-family: Boomolla;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Peta Lokasi</div>
                                     <div style="margin-top: 5px" class="rsABlock" data-move-offset="50"
@@ -726,7 +726,7 @@
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -220px;text-align:center">
                                 <div style="width: 350px;">
-                                    <div style="font-size: 24px;font-family: 'Aulyars Italic';" class="rsABlock"
+                                    <div style="font-size: 24px;font-family: Boomolla;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Pencegahan Covid-19</div>
                                     <div style="font-size: 12px;margin-top: 15px" class="rsABlock" data-move-offset="50"
