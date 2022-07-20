@@ -4,7 +4,11 @@
 @font-face {
     font-family: "Aulyars Italic";
     src: url('https://cdn.jsdelivr.net/gh/zeeid/inv-me/public/font/Aulyars%20Italic.otf');
-    }
+}
+@font-face {
+    font-family: "Boomolla";
+    src: url('https://cdn.jsdelivr.net/gh/zeeid/inv-me/public/font/Boomolla.ttf');
+}
     
     
 @font-face {
