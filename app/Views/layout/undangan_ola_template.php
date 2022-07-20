@@ -551,11 +551,11 @@
 
                         <div class="cover">
                             <div style="margin-left:-175px;width: 350px;margin-top: -265px;text-align:center">
-                                <div style="width: 350px;margin-top: 20px;">
+                                <div style="width: 350px;margin-top: 25px;">
                                     <div style="font-size: 24px;font-family: Boomolla;" class="rsABlock"
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Peta Lokasi</div>
-                                    <div style="margin-top: 5px" class="rsABlock" data-move-offset="50"
+                                    <div style="margin-top: 15px" class="rsABlock" data-move-offset="50"
                                         data-delay="200" data-speed="800" data-move-effect="top">
 
                                         <img src="<?=$uri_nya?>/images/library/dot_9b6215.jpg"
