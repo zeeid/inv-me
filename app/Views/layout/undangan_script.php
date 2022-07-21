@@ -13,17 +13,6 @@
             },
             success: function (hasil) {
                 $("#komentar1").html(hasil)
-                
-                // if(hasil=='OKE'){
-                //     $("#loading_ucapan").html('Berhasil Mengirim Ucapan ^_^');
-                //     window.setTimeout(function(){
-                //         BatalPesan()
-                //     }, 2000);
-                // }
-                
-                // document.getElementById('pesan').style.display = 'none';
-                // $(".royalSlider").royalSlider('goTo', 8);
-                // document.getElementById('btn_ucapan').style.display = 'none';
             }
         });
     }
@@ -37,7 +26,6 @@
             url: "<?=base_url()?>/kirim_ucapan",
             data: data,
             beforeSend: function() {
-                // setting a timeout
                 $("#loading_ucapan").html('<i class="fa fa-spinner fa-spin"></i> Mohon Tunggu, Sedang Mengirim Ucapan ^_^');
             },
             success: function (hasil) {
@@ -51,9 +39,6 @@
                     }, 3000);
                 }
                 
-                // document.getElementById('pesan').style.display = 'none';
-                // $(".royalSlider").royalSlider('goTo', 8);
-                // document.getElementById('btn_ucapan').style.display = 'none';
             }
         });
     });
@@ -73,7 +58,6 @@ jQuery(document).ready(function() {
 </script>
 <script>
 jQuery(document).ready(function($) {
-    // DO NOT INCLUDE THIS CODE IN YOUR BUILD, it's for tabs on this page
     var code = $('#html-code code');
     if (code.is(':empty')) {
         var rsCode = $('.royalSlider-preview');
@@ -253,64 +237,12 @@ btn.addEventListener('click', function() {
 
 function Pesan() {
     document.getElementById('pesan').style.display = 'block';
-    document.getElementById('isi').style.display = 'none';
 }
 
 function BatalPesan() {
     document.getElementById('pesan').style.display = 'none';
-    document.getElementById('isi').style.display = 'block';
 }
 </script>
 <script src="
 		<?=$uri_nya?>/dist/js/jquery.classyqr.min.js">
-</script>
-<!-- add proses -->
-
-<script>
-$(document).ready(function() {
-    $("#konfirmasi").change(function() {
-        var konfirmasi = $(this).val();
-        //alert('1111')
-        if (konfirmasi == 'Yes') {
-            document.getElementById('jumlah_hadir').style.display = 'block';
-            document.getElementById('jumlah_hadir_none').style.display = 'none';
-        } else if (konfirmasi == 'Ya') {
-            document.getElementById('jumlah_hadir').style.display = 'block';
-            document.getElementById('jumlah_hadir_none').style.display = 'none';
-        } else {
-            document.getElementById('jumlah_hadir').style.display = 'none';
-            document.getElementById('jumlah_hadir_none').style.display = 'block';
-        }
-    });
-});
-</script>
-
-<script>
-var vid = document.getElementById("myVideo");
-vid.onplay = function() {
-    document.getElementById('btn_play').style.display = 'none';
-    document.getElementById('btn_stop').style.display = 'block';
-    var sound = document.getElementById("audio");
-    sound.pause();
-};
-vid.onpause = function() {
-    document.getElementById('btn_play').style.display = 'block';
-    document.getElementById('btn_stop').style.display = 'none';
-    var sound = document.getElementById("audio");
-    sound.play();
-};
-//copy clipboard
-function copyToClipboard(element) {
-    var $temp = $(" < input > ");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
-    $('#tercopy').show();
-    setTimeout(delete_flash, 1000);
-}
-
-function delete_flash(flash) {
-    $('#tercopy').hide()
-}
 </script>

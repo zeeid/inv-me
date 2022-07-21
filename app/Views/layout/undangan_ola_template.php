@@ -7,15 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Undangan Website Pernikahan">
     <meta property="og:title" content="UNDANGAN PERNIKAHAN <?= strtoupper($user) ?>" />
-    
-    <!-- FONT NAMA ORTU -->
-    <!--<link href="http://fonts.cdnfonts.com/css/kiraly" rel="stylesheet">-->
-    <!--<link href="http://fonts.cdnfonts.com/css/mother-tongue---personal-use" rel="stylesheet">-->
-    <!--<link href="http://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">-->
-                
-
     <meta property="og:description" content="<?= $tanggal." - ".$bulan." - ".$tahun ?>">
-
     <meta property="og:image:type" content="image/jpeg" />
     <title>UNDANGAN PERNIKAHAN <?= strtoupper($user) ?></title>
     
@@ -24,8 +16,6 @@
     <script class="rs-file" src="<?=$uri_nya?>/assets/royalslider/jquery.royalslider.min.js"></script>
     <link class="rs-file" href="<?=$uri_nya?>/assets/royalslider/royalslider.css" rel="stylesheet">
     <script class="rs-file" src="<?=$uri_nya?>/assets/royalslider/jquery.easing-1.3.js"></script>
-
-    <!-- syntax highlighter -->
 
     <script src="<?=$uri_nya?>/assets/preview-assets/js/highlight.pack.js"></script>
     <script src="<?=$uri_nya?>/assets/preview-assets/js/jquery-ui-1.8.22.custom.min.js"></script>
@@ -54,14 +44,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Stalemate&amp;display=swap" rel="stylesheet">
 
-    <!-- guestbook -->
-
     <link rel="stylesheet" href="<?=$uri_nya?>/assets/css/style.css">
     <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
-
-    <!-- slider css -->
-
 
     <?= $this->include('layout/undangan_style') ?>
 
@@ -327,7 +312,7 @@
                                         data-move-offset="50" data-delay="200" data-speed="800" data-move-effect="top">
                                         Rangkaian Acara</div>
                                     <div style="font-size: 14px">
-                                        <div style="padding: 15px 50px 5px 50px;font-size: 24px;font-family: 'Dancing Script', cursive;"
+                                        <div style="padding: 15px 50px 5px 50px;font-size: 24px;font-family: 'Aulyars Italic';"
                                             class="rsABlock" data-move-offset="50" data-delay="200" data-speed="800"
                                             data-move-effect="top">
                                             <table style="width: 100%">
@@ -395,7 +380,7 @@
                                         </div>
                                     </div>
                                     <div style="font-size: 14px;">
-                                        <div style="padding: 15px 50px 5px 50px;font-size: 24px;font-family: 'Dancing Script', cursive;"
+                                        <div style="padding: 15px 50px 5px 50px;font-size: 24px;font-family: 'Aulyars Italic';"
                                             class="rsABlock" data-move-offset="50" data-delay="200" data-speed="800"
                                             data-move-effect="top">
                                             <table style="width: 100%">
