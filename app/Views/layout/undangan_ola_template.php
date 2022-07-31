@@ -48,6 +48,9 @@
     <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=$uri_nya?>/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/playv2.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"> -->
+
     <?= $this->include('layout/undangan_style') ?>
 
 </head>
@@ -963,7 +966,60 @@
                 </div>
             </div>
         </div>
-        <audio id="audio" src="<?=$desain['background_musik']?>" loop autoplay></audio>
+
+        <!-- <audio id="audio" src="<?=$desain['background_musik']?>" loop autoplay></audio> -->
+        <div id="bungkus_depan" style="display: grid;grid-template-columns: auto auto auto;">
+            <div id="panah" class="panah_hide" onclick="tampil()" style="text-align: center;">
+                <i class="fa fa-caret-right icon_panah_hide" aria-hidden="true"></i>
+            </div>
+
+            <div id="app-cover" class="slidingDiv">
+                <!-- <div id="bg-artwork"></div>
+                <div id="bg-layer"></div> -->
+                <div id="player">
+                    <div id="player-track">
+                        <div id="album-name"></div>
+                        <div id="track-name"></div>
+                        <div id="track-time">
+                            <div id="current-time"></div>
+                            <div id="track-length"></div>
+                        </div>
+                        <div id="s-area">
+                            <div id="ins-time"></div>
+                            <div id="s-hover"></div>
+                            <div id="seek-bar"></div>
+                        </div>
+                    </div>
+                    <div id="player-content">
+                        <div id="album-art">
+                            <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg" class="active" id="_1">
+                            <!-- <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_2.jpg" id="_2">
+                            <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_3.jpg" id="_3">
+                            <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_4.jpg" id="_4">
+                            <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg" id="_5"> -->
+                            <div id="buffer-box">Buffering ...</div>
+                        </div>
+                        <div id="player-controls">
+                            <!-- <div class="control">
+                                <div class="button" id="play-previous">
+                                    <i class="fas fa-backward"></i>
+                                </div>
+                            </div> -->
+                            <div class="control">
+                                <div class="button_play" id="play-pause-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <!-- <div class="control">
+                                <div class="button" id="play-next">
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <?= $this->include('layout/undangan_script') ;?>
     </div>
